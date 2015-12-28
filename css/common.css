@@ -378,10 +378,10 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableBox table td.inLink a{display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
 /* login */
-body.login_bg .panel-body{ background-color: #92cb20;}
+body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .loginBox{ position: relative; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: top center; background-size: 100% auto; display: -webkit-flex;display: flex; flex-flow: column; -webkit-align-items: center; align-items: center;  -webkit-justify-content: center; justify-content: center; width: 100%; height: 100%;}
 .loginBox .centerLogin{ width: 80%; position: absolute; top: 50%; margin-top: -180px; left: 50%; margin-left: -40%;  display: -webkit-flex; display: flex; -webkit-flex-flow: column;  flex-flow: column; -webkit-justify-content: center; justify-content: center;}
-.loginBox p.errText{ position: fixed; top: 0; z-index: 3; left:15%; font-size:1em;text-align: center; width: 70%;  margin: 5px auto; background:rgba(222,255,157,0.2);  line-height: 40px; color: #deff00;}
+.loginBox p.errText{ position: fixed; top: 0; z-index: 3; left:15%; font-size:1em;text-align: center; width: 70%;  margin: 5px auto; background:rgba(199,120,24,0.2);/* 皮肤 */   line-height: 40px; color: #a96006;/* 皮肤 */ }
 .loginBox h2{ width: 90px; color: #fff; margin: 0 auto; padding-bottom: 20px;}
 .loginBox h2 span{display: block; height: 90px; background: url("../images/common/logo_login.png") center center no-repeat; background-size: 100%; text-indent: -5000px;}
 .loginBox h2 strong{ font-weight: normal; text-align: center; display: block; line-height: 40px; font-size:18px;}
@@ -393,7 +393,7 @@ body.login_bg .panel-body{ background-color: #92cb20;}
 .loginBox ::-webkit-input-placeholder{color: #ffffff;}
 .loginBox .loginBtn p.loginUser { background-image: url("../images/common/ico01_user.png"); }
 .loginBox .loginBtn p.loginPass{background-image: url("../images/common/ico01_pass.png"); }
-.loginBox .loginBtn p a.loginSub{background-color: #76a41b; line-height: 40px; text-decoration: none; display: block; width: 100%; text-align: center; color: #ffffff; font-size: 16px;}
+.loginBox .loginBtn p a.loginSub{background-color: #c77818;/* 皮肤 */ line-height: 40px; text-decoration: none; display: block; width: 100%; text-align: center; color: #ffffff; font-size: 16px;}
 .loginBox .forPass { text-align: right;}
 .loginBox .forPass a{ color: #ffffff; line-height: 32px; font-size: 18px;}
 
