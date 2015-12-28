@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>承包助手</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
+    <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/touch.min.js"></script>
+    <script type="text/javascript" src="../js/layout.js"></script>
+</head>
+<body>
+<!--左侧滑动菜单-->
+<nav id="menu" class="menu">
+    <!--个人信息显示-->
+    <div class="topInfo">
+        <div class="photo">
+            <p><img src="../images/common/phone.png" alt="呼和浩特-张勇"/> </p>
+            <span>呼和浩特-张勇</span>
+        </div>
+    </div>
+    <!--//个人信息显示-->
+    <!--左侧功能菜单-->
+    <section class="menu-section">
+        <ul class="menu-section-list">
+            <li><a href="javascript:void(0)" class="active menu01">公告<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu02">设置<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu03">收藏<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu04">指标解释<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu05">搜索<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu06">用户信息<span></span></a></li>
+        </ul>
+    </section>
+    <!--//左侧功能菜单-->
+</nav>
+<!--左侧滑动菜单-->
+<!--页面整体布局-->
+<div id="main" class="panel">
+    <!--easyui布局-->
+	<div class="easyui-navpanel"  >
+        <!--页面内容框架-->
+        <div id="center">
+            <div class="noticeCon">
+                <div class="titArea">
+                    <h3>公告</h3>
+                </div>
+                <div class="listGroup listGroupOne">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>公告名称</strong><em class="iconStartPublish">2015-12-12</em><em class="iconStopPublish">2015-12-16</em></h4>
+                                <p>
+                                    每月总账单收入明细剔除不列收、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>公告名称</strong><em class="iconStartPublish">2015-12-12</em><em class="iconStopPublish">2015-12-16</em></h4>
+                                <p>
+                                    出账用户为开户时间在统计期当年，每月总账单收入明细剔除不列入、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>公告名称</strong><em class="iconStartPublish">2015-12-12</em><em class="iconStopPublish">2015-12-16</em></h4>
+                                <p>
+                                    开户时间小于统计期当年的出账用户每月总账单收入明细剔除不列收、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--//页面内容框架-->
+    </div>
+    <!--easyui布局-->
+</div>
+<!--页面整体布局-->
+<script type="text/javascript">
+
+    var slideout = new Slideout({
+        'panel': document.getElementById('main'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    var target = document.getElementById("main");
+    touch.on(target, 'swipeleft', function(ev){
+        var display = $(".slideout-menu").css("display");
+        if(display=="none"){
+            window.location.href="http://www.baidu.com";
+        }
+    });
+    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
+    document.querySelector('.menu').addEventListener('click', function(eve) {
+        slideout.close();
+    });
+    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
+    /* 滚动菜单 */
+    var swiper = new Swiper('.swiper-container');
+</script>
+</body>
+</html>

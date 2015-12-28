@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>承包助手</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
+    <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/touch.min.js"></script>
+    <script type="text/javascript" src="../js/picker.js"></script>
+    <script type="text/javascript" src="../js/picker.date.js"></script>
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script type="text/javascript" src="../js/layout.js"></script>
+</head>
+<body id="body">
+<!--左侧滑动菜单-->
+<nav id="menu" class="menu">
+    <!--个人信息显示-->
+    <div class="topInfo">
+        <div class="photo">
+            <p><img src="../images/photo/phone02.png" width="90" height="90" alt="logo"/> </p>
+            <span>呼和浩特-张勇</span>
+        </div>
+    </div>
+    <!--//个人信息显示-->
+    <!--左侧功能菜单-->
+    <section class="menu-section">
+        <ul class="menu-section-list">
+            <li><a href="javascript:void(0)" class="active menu01">公告<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu02">设置<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu03">收藏<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu04">指标解释<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu05">搜索<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu06">用户信息<span></span></a></li>
+        </ul>
+    </section>
+    <!--//左侧功能菜单-->
+</nav>
+<!--左侧滑动菜单-->
+<!--页面整体布局-->
+<div id="main" class="panel">
+    <!--easyui布局-->
+	<div class="easyui-navpanel"  >
+        <!--头部tab 菜单-->
+        <header class="dateHeader">
+            <!-- <ul class="topTab">
+				<li><a href="javascript:void(0)"  class="active">日指标</a></li>
+                <li><a href="javascript:void(0)" class="" >月指标</a></li>
+                <li><a href="javascript:void(0)" class="" >季度指标</a></li>
+			</ul>-->
+            <p class="topTab02"><a href="javascript:void(0)"  class="active">日指标</a>  <a href="javascript:void(0)" >月指标</a> <a href="javascript:void(0)" >月指标</a></p>
+            <!--日历控件-->
+            <div class="dateGuide">
+                <div class="yearText">年</div>
+                <fieldset class="fieldset">
+
+                    <div><input id="" hidden="hidden" class="datepicker" type="text">   <a class="toggleBtn open" href="javascript:void(0)">切换</a> </div>
+
+                </fieldset>
+
+            </div>
+            <!--//日历控件-->
+            <!--指标标题-->
+            <div class="tableTitle">
+                <!--切换列表图标类型-->
+                <h3 class="tableIco01">移动用户情况</h3>
+                <!--//切换列表图标类型-->
+                <a href="javascript:void(0)">收藏</a>
+            </div>
+            <!--//指标标题-->
+        </header>
+        <!--//头部tab 菜单-->
+        <!--底部切换菜单-->
+        <footer>
+            <div class="footerGuide">
+                <ul class="colGroup footerBtn">
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_picture_on.png" alt="首页"/></span>首页</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_clipart_on.png"  alt="用户概况"/></span>用户概况</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_shapes_on.png"  alt="销售品"/></span>销售品</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_smartart_on.png"  alt="4G"/></span>4G</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_chart_on.png"  alt="终端"/></span>终端</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!--//底部切换菜单-->
+        <!--页面内容框架-->
+        <div id="center">
+            <!--指标内容-->
+            <div class="tableGuide">
+
+                <!--指标表格-->
+                <div class="tableBox">
+                    <a class="toggleBTable" href="javascript:void(0)">切换</a>
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <colgroup>
+                                <col width="30%" />
+                                <col width="30%" />
+                                <col width="*" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="imText">规模到达</th>
+                                    <th>当日到达</th>
+                                    <th>上月同期到达</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="inLink"><a href="javascript:void(0)">网上用户</a> </td>
+                                <td>236.32万</td>
+                                <td>236.32万</td>
+                            </tr>
+                            <tr>
+                                <td class="inLink greenLink"><a href="javascript:void(0)">网上用户</a> </td>
+                                <td>236.32万</td>
+                                <td>236.32万</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                </div>
+                <!--//指标表格-->
+                <!--指标表格-->
+                <div class="tableBox">
+                    <a class="toggleBTable" href="javascript:void(0)">切换</a>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="imText">本期发展</th>
+                            <th>当日</th>
+                            <th>环比增量</th>
+                            <th>环比增幅</th>
+                            <th>月累计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//指标表格-->
+                <!--指标表格-->
+                <div class="tableBox">
+                    <a class="toggleBTable" href="javascript:void(0)">切换</a>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="imText">本期发展</th>
+                            <th>当日</th>
+                            <th>环比增量</th>
+                            <th>环比增幅</th>
+                            <th>月累计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//指标表格-->
+                <!--指标表格-->
+                <div class="tableBox">
+                    <a class="toggleBTable" href="javascript:void(0)">切换</a>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="imText">本期发展</th>
+                            <th>当日</th>
+                            <th>环比增量</th>
+                            <th>环比增幅</th>
+                            <th>月累计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        <tr>
+                            <td>发展用户 </td>
+                            <td>3000</td>
+                            <td>200</td>
+                            <td>7.8%</td>
+                            <td>10.34万</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//指标表格-->
+            </div>
+            <!--//指标内容-->
+        </div>
+        <!--//页面内容框架-->
+    </div>
+    <!--easyui布局-->
+</div>
+<!--页面整体布局-->
+<script type="text/javascript">
+    $(function(){
+        //日历控件
+        dateUse();
+
+    })
+
+    function dateUse(){
+
+        $('.datepicker').pickadate(
+                {
+
+                    monthsFull: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                    weekdaysShort: ['日', '一', '二', '三', '四', '五', '六'],
+                    year: 'picker__year',
+                    month: 'picker__month',
+                    day: 'picker__day'
+
+                }
+        );
+    }
+
+
+//新添加 滑动菜单插件
+    var hammertime =$("body");
+    var targetMenu =$("#menu");
+
+    //Swipe
+    var mc = new Hammer(el);
+    hammertime.get('swipeleft').set({
+        velocity:0.65
+    });
+    touch.on(hammertime, 'swipeleft', function(ev){
+        var display = $("#menu").css("display");
+        if(display=="none"){
+            //返回 语句
+        }
+    });
+
+    hammertime.on("swipeleft", function(evt) {
+        var display = $("#menu").css("display");
+        if(display=="none"){
+        }
+        else{
+            $("#menu").hide(20);
+        }
+    });
+
+    hammertime.on("swiperight", function() {
+        targetMenu.show(20);
+    });
+    targetMenu.on("tap", function() {
+        targetMenu.hide(20);
+    });
+
+
+
+
+</script>
+</body>
+</html>

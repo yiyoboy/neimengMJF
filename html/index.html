@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>承包助手</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
+    <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/touch.min.js"></script>
+    <script type="text/javascript" src="../js/layout.js"></script>
+</head>
+<body>
+<!--左侧滑动菜单-->
+<nav id="menu" class="menu">
+    <!--个人信息显示-->
+    <div class="topInfo">
+        <div class="photo">
+            <p><img src="../images/common/phone.png" alt="呼和浩特-张勇"/> </p>
+            <span>呼和浩特-张勇</span>
+        </div>
+    </div>
+    <!--//个人信息显示-->
+    <!--左侧功能菜单-->
+    <section class="menu-section">
+        <ul class="menu-section-list">
+            <li><a href="javascript:void(0)" class="active menu01">公告<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu02">设置<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu03">收藏<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu04">指标解释<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu05">搜索<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu06">用户信息<span></span></a></li>
+        </ul>
+    </section>
+    <!--//左侧功能菜单-->
+</nav>
+<!--左侧滑动菜单-->
+<!--页面整体布局-->
+<div id="main" class="panel">
+    <!--easyui布局-->
+	<div class="easyui-navpanel"  >
+        <!--头部导航菜单-->
+        <header class="topNavGuide">
+            <!-- Swiper -->
+            <div class="swiper-container ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul class="topNav">
+                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
+                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="topNav">
+                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
+                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //Swiper -->
+            <!--指标标题-->
+            <h3><strong>近七日重点指标趋势</strong><span class="arrow-down"><span class="arrow-down"></span></span></h3>
+            <!--//指标标题-->
+        </header>
+        <!--//头部导航菜单-->
+        <!--页面内容框架-->
+        <div id="center">
+            <!-- 指标趋势-->
+            <div class="charBox">
+                <img src="../images/common/img_char.png" alt="char">
+            </div>
+            <!-- 指标趋势-->
+            <!-- 指标趋势-->
+            <div class="charBox">
+                <img src="../images/common/img_char.png" alt="char">
+            </div>
+            <!-- 指标趋势-->
+            <!-- 指标趋势-->
+            <div class="charBox">
+                <img src="../images/common/img_char.png" alt="char">
+            </div>
+            <!-- 指标趋势-->
+        </div>
+        <!--//页面内容框架-->
+    </div>
+    <!--easyui布局-->
+</div>
+<!--页面整体布局-->
+<script type="text/javascript">
+
+    var slideout = new Slideout({
+        'panel': document.getElementById('main'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    var target = document.getElementById("main");
+    touch.on(target, 'swipeleft', function(ev){
+        var display = $(".slideout-menu").css("display");
+        if(display=="none"){
+            window.location.href="http://www.baidu.com";
+        }
+    });
+    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
+    document.querySelector('.menu').addEventListener('click', function(eve) {
+        slideout.close();
+    });
+    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
+    /* 滚动菜单 */
+    var swiper = new Swiper('.swiper-container');
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>承包助手</title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
+	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.mobile.js"></script>
+    <script type="text/javascript" src="../js/slideout.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/touch.min.js"></script>
+    <script type="text/javascript" src="../js/layout.js"></script>
+</head>
+<body>
+<!--左侧滑动菜单-->
+<nav id="menu" class="menu">
+    <!--个人信息显示-->
+    <div class="topInfo">
+        <div class="photo">
+            <p><img src="../images/common/phone.png" alt="呼和浩特-张勇"/> </p>
+            <span>呼和浩特-张勇</span>
+        </div>
+    </div>
+    <!--//个人信息显示-->
+    <!--左侧功能菜单-->
+    <section class="menu-section">
+        <ul class="menu-section-list">
+            <li><a href="javascript:void(0)" class="active menu01">公告<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu02">设置<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu03">收藏<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu04">指标解释<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu05">搜索<span></span></a></li>
+            <li><a href="javascript:void(0)" class=" menu06">用户信息<span></span></a></li>
+        </ul>
+    </section>
+    <!--//左侧功能菜单-->
+</nav>
+<!--左侧滑动菜单-->
+<!--页面整体布局-->
+<div id="main" class="panel">
+    <!--easyui布局-->
+	<div class="easyui-navpanel"  >
+        <!--底部切换菜单-->
+        <footer>
+            <div class="footerGuide">
+                <ul class="colGroup footerBtn">
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_picture_on.png" alt="首页"/></span>首页</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_clipart_on.png"  alt="用户概况"/></span>用户概况</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_shapes_on.png"  alt="销售品"/></span>销售品</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_smartart_on.png"  alt="4G"/></span>4G</a></li>
+                    <li><a href="javascript:void(0)"><span><img src="../images/common/large_chart_on.png"  alt="终端"/></span>终端</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!--//底部切换菜单-->
+        <!--页面内容框架-->
+        <div id="center">
+            <div class="setCon">
+                <div class="titArea">
+                    <h3>设置</h3>
+                </div>
+                <div class="listGroup">
+                    <ul>
+                        <!--<input class="easyui-switchbutton" data-options="onText:'是', offText:'否' checked"></div>-->
+                        <li><a href="javascript:void(0);">切换网格<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否',onChange: function(checked){
+        $('#dlg1').dialog('open').dialog('center')
+      }"></div></a> </li>
+                        <li><a href="javascript:void(0);">解除绑定<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否',onChange: function(checked){
+        $('#dlg2').dialog('open').dialog('center')
+      }
+"></div></a> </li>
+                        <li>
+                            <a href="javascript:void(0);">修改密码<div class="m-right"><input class="easyui-switchbutton" data-options="onText:'是', offText:'否',onChange: function(checked){
+        $('#dlg3').dialog('open').dialog('center')
+      }"></div></a>
+                            <!--<div class="editPasswordArea" style="display: none;">-->
+                            <div class="editPasswordArea">
+                                <dl>
+                                    <dt>当前密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <dl>
+                                    <dt>新密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <dl>
+                                    <dt>确定新密码</dt>
+                                    <dd><input type="text" value="" id="" name="" /></dd>
+                                </dl>
+                                <a class="btnItem" href="javascript:void(0);">修改密码</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--//页面内容框架-->
+    </div>
+    <!--easyui布局-->
+</div>
+<!--页面整体布局-->
+<!--修改密码弹出层-->
+<div id="dlg1" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico01Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">修改密码成功</p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg1').dialog('close')">确定</a>
+    </div>
+</div>
+<!--修改密码弹出层-->
+<!--修改密码弹出层-->
+<div id="dlg2" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico01Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">修改密码成功</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg2').dialog('close')">确定</a>
+    </div>
+</div>
+<!--修改密码弹出层-->
+<!--确定绑定弹出层-->
+<div id="dlg3" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico02Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="textDialog">确定解除绑定账号？</p>
+        <!--//报表输入-->
+        <!--报表输入-->
+        <p></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox twoDialogBTn">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">确定</a>
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg3').dialog('close')">取消</a>
+    </div>
+</div>
+<!--确定绑定弹出层-->
+<script type="text/javascript">
+
+    var slideout = new Slideout({
+        'panel': document.getElementById('main'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    var target = document.getElementById("main");
+    touch.on(target, 'swipeleft', function(ev){
+        var display = $(".slideout-menu").css("display");
+        if(display=="none"){
+            window.location.href="http://www.baidu.com";
+        }
+    });
+    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
+    document.querySelector('.menu').addEventListener('click', function(eve) {
+        slideout.close();
+    });
+    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
+    /* 滚动菜单 */
+    var swiper = new Swiper('.swiper-container');
+</script>
+</body>
+</html>
