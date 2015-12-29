@@ -146,7 +146,7 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .menu-section-list li{position: relative;}
 .menu-section-list a{display: block; line-height: 40px; height:40px; padding-left: 36px; border-bottom: 1px solid #e1e1e1; color: #4f4f4f;  border-left:5px solid #eaeaea;  background-repeat: no-repeat; background-size: 16px 16px; background-position: 10px center;}
 .menu-section-list a:hover{background-color: rgba(255, 255, 255, 0.1);text-decoration: none;}
-.menu-section-list a.active{ background-color: #2a2a34; color: #e7e7e7;/* 皮肤 */ border-left:5px solid #92cb20; }
+.menu-section-list a.active{ background-color: #2a2a34; color: #e7e7e7;/* 皮肤 */ border-left:5px solid #f7941d; }
 .menu-section-list a span{ position:absolute; right:15px; top: 50%;
     margin-top:-8px ; display: block; width: 16px; height: 16px; background: url("../images/common/iconRight02_menu.png") center center no-repeat; background-size: 16px 16px;}
 .menu-section-list a.active span{ background-image: url("../images/common/iconRight_menu.png");}
@@ -191,12 +191,12 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .panel-header{ padding: 0; border: none;}
 .topTab{ background: #fdfdfd; border: none; border-bottom: 2px solid #e2e5e6; text-align: center; padding-top: 5px; height: 41px;}
 .topTab li{ display:inline;}
-.topTab li a{position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 34px; line-height: 34px;border: 1px solid #92cc1f;  background: #ffffff; text-decoration: none;}
-.topTab li a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; font-weight: bold;}
+.topTab li a{position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 34px; line-height: 34px;border: 1px solid #f7941d;  background: #ffffff; text-decoration: none;}
+.topTab li a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;}
 
 p.topTab02{ background: #fdfdfd; border: none; border-bottom: 2px solid #e2e5e6; text-align: center; padding-top: 5px; height: 41px;}
-p.topTab02 a{ position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 34px; line-height: 34px;border: 1px solid #92cc1f;  background: #ffffff; text-decoration: none;}
-p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; font-weight: bold;  }
+p.topTab02 a{ position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 34px; line-height: 34px;border: 1px solid #f7941d;  background: #ffffff; text-decoration: none;}
+p.topTab02 a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;  }
 /* 底部图标 */
 
 .panel-footer{ border-top: 1px solid #cccccc; background:#fdfdfd;}
@@ -264,7 +264,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; box-shado
 
 /* 日历样式 */
 input.datepicker,
-input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 100%; font-size: 18px;color: #b1d95f;}
+input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 100%; font-size: 18px;color: #f7941d;}
 .dateHeader{ height:130px;border-bottom: 1px solid #e5e5e5;overflow: hidden;position: relative;z-index:100;}
 /* 没有日历高度 */
 .dateHeader.noDate .dateGuide{display:none;}
@@ -278,7 +278,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 /** * The picker input element. */
 .picker__input{cursor: default;}
 /** * When the picker is opened, the input element is “activated”. */
-.picker__input.picker__input--active{border-color: #0089ec;}
+.picker__input.picker__input--active{border-color: #f7941d;}
 /** * The holder is the only “scrollable” top-level container element. */
 .picker__holder{width: 100%; -webkit-overflow-scrolling: touch;}
 /** * The box contains all the picker contents. */
@@ -293,21 +293,21 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 
 .picker__box{ }
 /** * The header containing the month and year stuff. */
-.picker__header{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
+.picker__header{position: relative; font-size:1em; height: 50px; color: #f7941d; line-height: 50px; text-align: center;}
 /** * The month and year labels. */
 .picker__month,
 .picker__year{display: inline-block; padding:0 5px; border-radius: 5px; font-size: 18px;position: absolute}
 .picker__year{ left: 50%; margin-left: -55px; }
 .picker__month{margin-left:10px; left: 50%;}
-.yearText{ z-index:2; position: absolute; left: 50%; margin-left: -5px; top: 42px;font-size:18px; line-height: 50px;  display:inline-block; color: #b1d95f; }
+.yearText{ z-index:2; position: absolute; left: 50%; margin-left: -5px; top: 42px;font-size:18px; line-height: 50px;  display:inline-block; color: #f7941d; }
 /** * The month navigation buttons. */
 .picker__nav--prev,
 .picker__nav--next{position: absolute; padding: .5em 1.25em; width: 1em; height: 1em; top: .5em;}
 .picker__nav--prev{left: 1.5em; padding-right: 1.25em;}
 .picker__nav--next{right: 1.5em; padding-left: 1.25em;}
 .picker__nav--prev:before,
-.picker__nav--next:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #92cc1f; width: 0; height: 0; display: block; margin: 0 auto;}
-.picker__nav--next:before{border-right: 0; border-left: 0.75em solid #92cc1f;}
+.picker__nav--next:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #f7941d; width: 0; height: 0; display: block; margin: 0 auto;}
+.picker__nav--next:before{border-right: 0; border-left: 0.75em solid #f7941d;}
 .picker__nav--prev:hover,
 .picker__nav--next:hover{cursor: pointer; color: #000000; background: #b1dcfb;}
 .picker__nav--disabled,
@@ -322,16 +322,16 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 /** * The days on the calendar */
 .picker__day{padding: .3125em 0; font-weight: 200; font-size: 1em;}
 .picker__day--today{width: 30px; margin: 0 auto; border-radius: 50%; background-color: #bfbec3; color:#ffffff; position: relative;;}
-.picker__day--today:before{content: ""; position: absolute; top:-2px; right:-2px; width: 0; height: 0; border-radius: 50%; border: 0.2em solid #92cc20;}
+.picker__day--today:before{content: ""; position: absolute; top:-2px; right:-2px; width: 0; height: 0; border-radius: 50%; border: 0.2em solid #f7941d;}
 .picker__day--selected,
-.picker__day--selected:hover{width: 30px; margin: 0 auto; border-radius: 50%; background-color: #92cc20; color:#ffffff;}
+.picker__day--selected:hover{width: 30px; margin: 0 auto; border-radius: 50%; background-color: #f7941d; color:#ffffff;}
 .picker__day--highlighted{}
 .picker__day--disabled:before{}
 .picker__day--outfocus{color: #dddddd;}
 .picker__day--infocus:hover,
 .picker__day--outfocus:hover{cursor: pointer; color: #000000; background: #b1dcfb;}
 .picker__day--highlighted:hover,
-.picker--focused .picker__day--highlighted{background: #92cc20; color: #ffffff;}
+.picker--focused .picker__day--highlighted{background: #f7941d; width: 30px; color: #ffffff; border-radius: 50%;}
 .picker__day--disabled,
 .picker__day--disabled:hover{background: #f5f5f5; border-color: #f5f5f5; color: #dddddd; cursor: default;}
 .picker__day--highlighted.picker__day--disabled,
@@ -344,9 +344,9 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 #MonthSel{ position: absolute; top: 40px;left: 0; width: 100%;color: #999999; border-top:1px solid #e5e5e5;}
 #MonthSel .clear{clear: both;}
 #MonthSel {background-color:white;}
-#MonthSel .title{position: relative; font-size:1em; height: 50px; color: #b1d95f; line-height: 50px; text-align: center;}
+#MonthSel .title{position: relative; font-size:1em; height: 50px; color: #f7941d; line-height: 50px; text-align: center;}
 #MonthSel .title li.middle{position:relative; overflow:visible;top: -5px;}
-#MonthSel .title li.middle select{ font-size: 18px; border: 1px solid #92cc1f; color: #92cc1f; padding: 0 10px;}
+#MonthSel .title li.middle select{ font-size: 18px; border: 1px solid #f7941d; color: #f7941d; padding: 0 10px;}
 
 #MonthSel .title li.middle .year_list{width:100px; position:absolute; background-color:lightgrey; left:-20px}
 #MonthSel .title li.middle .year_list li {background-color:transparent; text-align:center; width:45px; height: 20px;}
@@ -358,8 +358,8 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 #MonthSel .title li:last-child{right: 1.5em; padding-left: 1.25em;}
 #MonthSel .title li:first-child{left: 1.5em; padding-right: 1.25em;}
 #MonthSel .title li:first-child:before,
-#MonthSel .title li:last-child:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #92cc1f; width: 0; height: 0; display: block; margin: 0 auto;}
-#MonthSel .title li:last-child:before{border-right: 0; border-left: 0.75em solid #92cc1f;}
+#MonthSel .title li:last-child:before{content: " "; border-top: .5em solid transparent; border-bottom: .5em solid transparent; border-right: 0.75em solid #f7941d; width: 0; height: 0; display: block; margin: 0 auto;}
+#MonthSel .title li:last-child:before{border-right: 0; border-left: 0.75em solid #f7941d;}
 #MonthSel .title li:last-child:hover,
 #MonthSel .title li:first-child:hover{cursor: pointer; color: #999999;  background: #b1dcfb;}
 #MonthSel .title .inner.paddingTop{width: 60%; margin: 0 auto; font-size: 18px;}
@@ -368,7 +368,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 #MonthSel .body ul li{ float: left; width: 33%; font-size: 18px; text-align: center; height: 55px; line-height: 55px;color: #999999; background: #fdfdfd; border-top: 1px solid #e5e5e5; }
 #MonthSel .body ul li .inner{ width: 40px; height: 40px;border-radius: 50%; margin: 7px auto 0; line-height: 40px;}
 #MonthSel .body ul li.over .inner,
-#MonthSel .body ul li.over.over02 .inner{ background-color: #92cc20; color:#ffffff;}
+#MonthSel .body ul li.over.over02 .inner{ background-color: #f7941d; color:#ffffff;}
 #MonthSel .body ul li.over02 .inner{ background-color: #bfbec3; color:#ffffff; }
 #MonthSel .bottom{ height: 16px; padding-top: 5px; text-align: center }
 #MonthSel .bottom button.clear{   background-color: gainsboro; border: 1px solid; font-size: 12px;}
@@ -378,7 +378,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 /* 指标内容 */
 .tableGuide{ background-color: #e7e7e7;}
 .tableTitle { z-index: 3; position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
-.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #93cb20; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
+.tableTitle h3{ font-size: 14px; font-weight: normal; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #f7941d; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
 .tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
 .tableTitle h3.tableIco02{background-image:url("../images/common/large_chart_on.png");}
 .tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
@@ -390,7 +390,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .tableBox a.toggleBTable.active{background-image: url("../images/common/toggle_ico01.png");}
 .tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;}
-.tableBox table thead th.imText{color: #92cc20;}
+.tableBox table thead th.imText{color: #f7941d;}
 .tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #d9d9d9; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
 .tableBox table td.inLink a{display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
@@ -420,28 +420,28 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .collection .titArea h3 {background-image: url("../images/common/ico03_menu.png");}
 .collBox{ padding: 10px;}
 .collBox ul{ overflow: hidden;}
-.collBox ul li.onSelect{background-color: #92cb20; }
+.collBox ul li.onSelect{background-color: #f7941d; }
 .collBox ul li.onSelect a{ background-color: #2a2a34; color: #ffffff;}
 .collBox ul li.onSelect strong{ color: #ffffff; background-image: url("../images/common/ico03_coll_on.png");}
 .collBox ul li{  color: #333333; font-size: 14px; float: left; width: 45%; margin:2.4%; height: 150px; position: relative;  background-color: #eeeeee;  background-image:url("../images/common/bg_coll.png"); background-repeat: no-repeat; background-position: center bottom; background-size:100%;}
 .collBox ul li a{ position: absolute; right: 0;  color: #333333; text-decoration: none; bottom: 0; height: 40px; line-height: 40px; width: 100%; text-align: center; background-color: #f3f3f3;}
 .collBox ul li strong{ line-height: 30px; position: absolute; left: 10px; top: 0; font-weight: normal; background: url("../images/common/ico03_coll.png") left center no-repeat; background-size: 16px 16px; padding-left: 20px; display: block; }
 .collBox ul li.collAdd{ background-image: none;}
-.collBox ul li.collAdd a{ display: block; height: 148px; border: 1px solid #eeeeee; text-indent: -5000px; position: relative; background:#ffffff url("../images/common/ico04_coll.png") center center no-repeat; background-size: 50%;  }
+.collBox ul li.collAdd a{ display: block; height:180px; border: 1px solid #eeeeee; text-indent: -5000px; position: relative; background:#ffffff url("../images/common/ico04_coll.png") center center no-repeat; background-size: 50%;  }
 .collBox .btnItem{ display: none;}
 /* 块切换 */
 .lineColl.collBox{ padding: 0}
 .lineColl.collBox li{ height: 40px; border-bottom: 1px solid #e5e5e5; width: 100%; margin: 0; background-color: #ffffff; background-image: none;}
-.lineColl.collBox li a{ left: auto; right: 10px; ; display: inline; width: auto; height: auto; background: none; color: #92cb20;}
+.lineColl.collBox li a{ left: auto; right: 10px; ; display: inline; width: auto; height: auto; background: none; color: #f7941d;}
 .lineColl.collBox li strong{ top: 5px;}
 .lineColl.collBox ul li.onSelect a{ background: none;}
 .lineColl.collBox li.collAdd{ display: none;}
-.lineColl.collBox .btnItem{ display: block; background-color: #92cb20;}
+.lineColl.collBox .btnItem{ display: block; background-color: #f7941d;}
 
 /* 弹出层样式  */
 .window-mask{ opacity: 0.6; background-color: #060606;}
 .window-shadow{ background: none; box-shadow: none;}
-.window{ background-color: #92cb20; border-radius: 10px; padding: 0; border: none;}
+.window{ background-color: #f7941d; border-radius: 10px; padding: 0; border: none;}
 .window .window-header{ display: none}
 .window .panel-body{ background: none;}
 .dialogGuide{ width: 70%; position: relative;}
@@ -458,7 +458,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .easyui-dialog.dialogGuide.panel-body.panel-body-noborder.window-body { height:333px!important;}
 .twoDialogBTn .dialogBtn{ width: 49.8%;  display: inline-block; float:left;}
 .twoDialogBTn .dialogBtn:last-child{float: right;}
-.dialogBtn { text-decoration: none; text-align: center; background-color: #2a2a34; display: block;  color: #92cb20; width: 100%; line-height: 40px;  height: 40px; font-size: 18px;}
+.dialogBtn { text-decoration: none; text-align: center; background-color: #2a2a34; display: block;  color: #f7941d; width: 100%; line-height: 40px;  height: 40px; font-size: 18px;}
 
 
 
@@ -470,13 +470,13 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 /* 子页通用 标题 */
 .titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
 .titArea h3 {font-size: 18px; line-height:50px; padding-left: 36px; background-size: 16px 16px; background-position: 16px 50%; background-repeat: no-repeat;}
-.titAreaOne { border-bottom:2px solid #92cb20;}
+.titAreaOne { border-bottom:2px solid #f7941d;}
 
 /* 添加右侧切换图标 */
 .titArea ul{position: absolute; height: 35px; top: 7px; right: 7px;}
 .titArea ul li{ float: left; width: 35px; margin-left: 5px;}
 .titArea ul li a{ display: block; height: 35px;  overflow: hidden; text-indent: -5000px; border-radius:5px; background-repeat: no-repeat; background-position: center; background-color: #ffffff; background-size: 16px 16px;   }
-.titArea ul li a.active{ background-color: #92cb20;}
+.titArea ul li a.active{ background-color: #f7941d;}
 .titArea ul li a.listIco{ background-image: url("../images/common/ico01_coll.png");}
 .titArea ul li a.listIco.active{background-image: url("../images/common/ico01_coll_on.png");}
 .titArea ul li a.blockIco{ background-image: url("../images/common/ico02_coll.png");}
@@ -505,7 +505,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .listGroup ul li { line-height:1;  border-bottom: 1px solid #e5e5e5;}
 .listGroup ul li a {position: relative; display: block; overflow:hidden; padding:16px 0 16px 34px; border-left:4px solid transparent; font-size: 14px; color:#97979a; background-image: url("../images/common/ico03_coll.png");background-position: 12px 15px; background-repeat: no-repeat; background-size: 16px 16px;  }
 .listGroup ul li a:hover { text-decoration: none;}
-.listGroup ul li a.active { background-color:#f5f5f5; border-left:4px solid #92cb20; text-decoration: none; color:#92cb20; }
+.listGroup ul li a.active { background-color:#f5f5f5; border-left:4px solid #f7941d; text-decoration: none; color:#f7941d; }
 .listGroup ul li a span.bedeck {position:absolute; right:15px; top: 50%;  margin-top:-8px ; display: block; width: 16px; height: 16px; background: url("../images/common/iconRight02_menu.png") 50% 50% no-repeat; background-size: 16px 16px;}
 .listGroup ul li h4 { position: relative; margin-right: 16px; color: #2a2a34; font-size: 15px; line-height: 1; text-align: right; font-weight: normal;}
 .listGroup ul li h4 strong { position: absolute; left:0; top: 0;}
@@ -535,14 +535,14 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .noticeTxt span em.iconStopPublish {background-image: url("../images/common/icon_stop_publish@2x.png");}
 
 /*  设置 - 修改密码 */
-.setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#92cb20;
+.setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#f7941d;
     padding-left:0 ; padding-right: 0; }
 .setCon .m-right { right:16px;}
-.setCon .m-right .switchbutton-on {background-color:#92cb20; color: #fff;}
+.setCon .m-right .switchbutton-on {background-color:#f7941d; color: #fff;}
 .setCon .switchbutton-off {background-color:#fcfcfc; color: #9b9b9b;}
 
 .setCon .editPasswordArea { padding-bottom: 36px;}
-.setCon .editPasswordArea dl:first-child {border-top:6px solid #92cb20;}
+.setCon .editPasswordArea dl:first-child {border-top:6px solid #f7941d;}
 .setCon .editPasswordArea dl dt{ color:#97979a;}
 
 

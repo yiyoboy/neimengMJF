@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21353744-4a12-4065-8a37-a2568d9da8c3" name="!changes.default.changelist.name!" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico01_menu.png" afterPath="$PROJECT_DIR$/images/common/ico01_menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico02_menu.png" afterPath="$PROJECT_DIR$/images/common/ico02_menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico02_table.png" afterPath="$PROJECT_DIR$/images/common/ico02_table.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico03_coll.png" afterPath="$PROJECT_DIR$/images/common/ico03_coll.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico04_menu.png" afterPath="$PROJECT_DIR$/images/common/ico04_menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico05_menu.png" afterPath="$PROJECT_DIR$/images/common/ico05_menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/icon_start_publish@2x.png" afterPath="$PROJECT_DIR$/images/common/icon_start_publish@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/icon_stop_publish@2x.png" afterPath="$PROJECT_DIR$/images/common/icon_stop_publish@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/icon_time_operation@2x.png" afterPath="$PROJECT_DIR$/images/common/icon_time_operation@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/icon_user_operation@2x.png" afterPath="$PROJECT_DIR$/images/common/icon_user_operation@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/large_chart_on.png" afterPath="$PROJECT_DIR$/images/common/large_chart_on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/large_clipart_on.png" afterPath="$PROJECT_DIR$/images/common/large_clipart_on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/large_picture_on.png" afterPath="$PROJECT_DIR$/images/common/large_picture_on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/large_shapes_on.png" afterPath="$PROJECT_DIR$/images/common/large_shapes_on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/large_smartart_on.png" afterPath="$PROJECT_DIR$/images/common/large_smartart_on.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/reback.png" afterPath="$PROJECT_DIR$/images/common/reback.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/reback_3.png" afterPath="$PROJECT_DIR$/images/common/reback_3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_explain@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_explain@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_explain_search@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_explain_search@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_find_password@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_find_password@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_notice@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_notice@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_set@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_set@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/tit_toggle_grid@2x.png" afterPath="$PROJECT_DIR$/images/common/tit_toggle_grid@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/title_line.png" afterPath="$PROJECT_DIR$/images/common/title_line.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_hammer.html" afterPath="$PROJECT_DIR$/html/basic_hammer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico03_menu.png" afterPath="$PROJECT_DIR$/images/common/ico03_menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico06_menu.png" afterPath="$PROJECT_DIR$/images/common/ico06_menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic.html" afterPath="$PROJECT_DIR$/html/basic.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_month.html" afterPath="$PROJECT_DIR$/html/basic_month.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_test02.html" afterPath="$PROJECT_DIR$/html/basic_test02.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/collection.html" afterPath="$PROJECT_DIR$/html/collection.html" />
@@ -36,7 +14,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/explainSearch.html" afterPath="$PROJECT_DIR$/html/explainSearch.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/findPassword.html" afterPath="$PROJECT_DIR$/html/findPassword.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lead_img.html" afterPath="$PROJECT_DIR$/html/lead_img.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/login.html" afterPath="$PROJECT_DIR$/html/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/notice.html" afterPath="$PROJECT_DIR$/html/notice.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/noticeInformation.html" afterPath="$PROJECT_DIR$/html/noticeInformation.html" />
@@ -64,31 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="findPassword.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/findPassword.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1995">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lead_img.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/lead_img.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="760">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1102">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="5.25" vertical-offset="451" max-vertical-offset="1121">
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -97,8 +54,8 @@
       <file leaf-file-name="notice.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/notice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2280">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-22.107143" vertical-offset="1642" max-vertical-offset="2432">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,8 +64,8 @@
       <file leaf-file-name="noticeInformation.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/noticeInformation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1900">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-22.107143" vertical-offset="1262" max-vertical-offset="2052">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +74,8 @@
       <file leaf-file-name="set.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/set.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="3496">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-22.107143" vertical-offset="2858" max-vertical-offset="3648">
+              <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,8 +84,8 @@
       <file leaf-file-name="toggleGrid.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/toggleGrid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14459665" vertical-offset="0" max-vertical-offset="1900">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.9238806" vertical-offset="1262" max-vertical-offset="2052">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,8 +94,18 @@
       <file leaf-file-name="explain.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/explain.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2280">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-22.107143" vertical-offset="1642" max-vertical-offset="2432">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="66.32143" vertical-offset="2161" max-vertical-offset="2831">
+              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -147,8 +114,8 @@
       <file leaf-file-name="explain02.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/explain02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1900">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-40.42857" vertical-offset="749" max-vertical-offset="2052">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,8 +124,18 @@
       <file leaf-file-name="explainSearch.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/explainSearch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2033">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state vertical-scroll-proportion="-22.107143" vertical-offset="1395" max-vertical-offset="2185">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="findPassword.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/findPassword.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.821428" vertical-offset="1173" max-vertical-offset="2014">
+              <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="97" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -177,20 +154,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/basic.html" />
         <option value="D:/东方国信/内蒙手机经分/js 使用/Swiper-3.2.7/Swiper-master/demos/02-responsive.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
-        <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/basic_hammer.html" />
+        <option value="$PROJECT_DIR$/html/lead_img.html" />
+        <option value="$PROJECT_DIR$/../demo/css/common.css" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/html/basic.html" />
+        <option value="$PROJECT_DIR$/html/findPassword.html" />
+        <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/html/login.html" />
         <option value="$PROJECT_DIR$/html/basic_month.html" />
         <option value="$PROJECT_DIR$/html/basic_test02.html" />
         <option value="$PROJECT_DIR$/html/collection.html" />
         <option value="$PROJECT_DIR$/html/explain.html" />
         <option value="$PROJECT_DIR$/html/explain02.html" />
         <option value="$PROJECT_DIR$/html/explainSearch.html" />
-        <option value="$PROJECT_DIR$/html/findPassword.html" />
-        <option value="$PROJECT_DIR$/html/lead_img.html" />
-        <option value="$PROJECT_DIR$/html/login.html" />
         <option value="$PROJECT_DIR$/html/notice.html" />
         <option value="$PROJECT_DIR$/html/noticeInformation.html" />
         <option value="$PROJECT_DIR$/html/set.html" />
@@ -200,7 +178,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1452" />
     <option name="height" value="876" />
   </component>
@@ -302,6 +279,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="demo-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neimengMJF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neimengMJF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dialog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neimengMJF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neimengMJF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -375,7 +384,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1452" height="876" extended-state="0" />
+    <frame x="-8" y="0" width="1452" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -475,14 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="5928">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/效果图/1.内蒙手机经分v2.0—登录首次绑定.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -496,14 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2812">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/东方国信/内蒙手机经分/js 使用/Swiper-3.2.7/Swiper-master/demos/02-responsive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1615">
@@ -512,122 +505,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-mobile/dialog/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7808219" vertical-offset="228" max-vertical-offset="893">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2291667" vertical-offset="3284" max-vertical-offset="10412">
+          <caret line="181" column="52" selection-start-line="181" selection-start-column="52" selection-end-line="181" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9690" max-vertical-offset="10754">
-          <caret line="528" column="10" selection-start-line="528" selection-start-column="10" selection-end-line="528" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.57663125" vertical-offset="5947" max-vertical-offset="10754">
+          <caret line="333" column="76" selection-start-line="333" selection-start-column="76" selection-end-line="333" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic_hammer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="6004">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="6099">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_test02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="6156">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/collection.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2318">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/explain.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2280">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/explain02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1900">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/explainSearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2033">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/findPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1995">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="6004">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/lead_img.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="760">
+        <state vertical-scroll-proportion="-1.1785715" vertical-offset="62" max-vertical-offset="760">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5" vertical-offset="5195" max-vertical-offset="6080">
+          <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0" vertical-offset="5309" max-vertical-offset="6270">
+          <caret line="303" column="0" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_test02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.678572" vertical-offset="4758" max-vertical-offset="5966">
+          <caret line="275" column="0" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="1623" max-vertical-offset="2413">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/explain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="1642" max-vertical-offset="2432">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/explain02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.42857" vertical-offset="749" max-vertical-offset="2052">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/explainSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="1395" max-vertical-offset="2185">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/findPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.821428" vertical-offset="1173" max-vertical-offset="2014">
+          <caret line="88" column="3" selection-start-line="88" selection-start-column="3" selection-end-line="97" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="66.32143" vertical-offset="2161" max-vertical-offset="2831">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1102">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="5.25" vertical-offset="451" max-vertical-offset="1121">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/notice.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="2280">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="1642" max-vertical-offset="2432">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/noticeInformation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="1900">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="1262" max-vertical-offset="2052">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/set.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="3496">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="-22.107143" vertical-offset="2858" max-vertical-offset="3648">
+          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/toggleGrid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14459665" vertical-offset="0" max-vertical-offset="1900">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.9238806" vertical-offset="1262" max-vertical-offset="2052">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>

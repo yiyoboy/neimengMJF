@@ -16,6 +16,7 @@
     <script type="text/javascript" src="../js/touch.min.js"></script>
     <script type="text/javascript" src="../js/picker.js"></script>
     <script type="text/javascript" src="../js/picker.date.js"></script>
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
     <script type="text/javascript" src="../js/simpleDate.js"></script>
     <script type="text/javascript" src="../js/layout.js"></script>
 </head>
@@ -272,26 +273,34 @@
         );
     }
 
-    var slideout = new Slideout({
-        'panel': document.getElementById('main'),
-        'menu': document.getElementById('menu'),
-        'padding':256,
-        'tolerance': 70,
-        'side': 'left'
-    });
+    //新添加 滑动菜单插件
+    var hammertime =$("body");
+    var targetMenu =$("#menu");
 
-    var target = document.getElementById("main");
-    touch.on(target, 'swipeleft', function(ev){
-        var display = $(".slideout-menu").css("display");
+    //Swipe
+    touch.on(hammertime, 'swipeleft', function(ev){
+        var display = $("#menu").css("display");
         if(display=="none"){
-            window.location.href="http://www.baidu.com";
+            //返回 语句
         }
     });
-    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
-    document.querySelector('.menu').addEventListener('click', function(eve) {
-        slideout.close();
+
+    hammertime.on("swipeleft", function(evt) {
+        var display = $("#menu").css("display");
+        if(display=="none"){
+        }
+        else{
+            $("#menu").hide(20);
+        }
     });
-    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
+    hammertime.on("swiperight", function() {
+        targetMenu.show(20);
+    });
+    targetMenu.on("tap", function() {
+        targetMenu.hide(20);
+    });
+
 
 
 </script>
