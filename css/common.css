@@ -239,6 +239,7 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; fo
 .topNav li a.icon07{background-image: url("../images/common/ico07_topMenu.png");}
 .topNav li a.icon08{background-image: url("../images/common/ico08_topMenu.png");}
 .topNav li a.icon09{background-image: url("../images/common/ico09_topMenu.png");}
+.topNav li a.icon10{background-image: url("../images/common/ico10_topMenu.png");}
 .topNavGuide h3{ color: #f7941d;/* 皮肤 */ height: 32px; background-color: #ffffff; text-align: center; position: relative;}
 .topNavGuide h3 strong{ display: inline-block; padding: 0 5px; font-size:1em; border-bottom: 1px solid #f7941d;/* 皮肤 */ line-height: 32px; }
 .topNavGuide h3 .arrow-down{width: 0;height: 0; position:absolute; left:50%; margin-left:-2px; bottom: -5px; border-left: 4px solid transparent; border-right: 4px solid transparent;border-top: 5px solid #f7941d;/* 皮肤 */ display: block;}
@@ -384,7 +385,8 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
 .tableTitle h3.tableIco04{background-image:url("../images/common/large_smartart_on.png");}
 .tableTitle a{ position:absolute;top: 10px; right: 10px; width: 16px; height: 16px; background-image: url("../images/common/ico03_menu.png");  background-position:  center center; background-repeat: no-repeat; background-size: 16px 16px;  text-indent: -5000px;}
-
+.tableTitle a.bookIco{background-image: url("../images/common/ico03_book.png"); right: 30px; top: 11px;}
+.tableTitle a.bookIco.gray{background-image: url("../images/common/ico03_bookG.png");}
 /* 指标表格 */
 .tableBox{ position: relative; margin-bottom: 5px;}
 .tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
@@ -395,6 +397,16 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
 .tableBox table td.inLink a{display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
+
+/*悬浮切换按钮*/
+.handTab{border-radius:50%; line-height: 20px; padding-top: 10px; text-align: center; color: #ffffff;background: #f7941d;  position: absolute;  width: 60px; height: 50px;  bottom: 70px; right:30px; opacity: 0.5; cursor: pointer; }
+.handTab.hover{ opacity: 1;}
+.handTab.tap{ opacity: 1;}
+.handTab.tap a{ display: block;}
+.handTab a{position: absolute; left: -20px; top: -50px; border-radius:50%; border: 1px solid #f7941d; color: #000000; font-size:14px;display: none; width: 40px;  height: 40px; line-height: 40px;  background: #ffffff; text-decoration: none;}
+.handTab a:last-child{ top: 0px; left: -50px;}
+.handTab a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;  }
+
 /* login */
 body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .loginBox{ position: relative; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: top center; background-size: 100% auto; display: -webkit-flex;display: flex; flex-flow: column; -webkit-align-items: center; align-items: center;  -webkit-justify-content: center; justify-content: center; width: 100%; height: 100%;}

@@ -4,6 +4,7 @@ $(function(){
    tabMenu(".menu-section-list","active");
    tabMenu(".topNav","active");
     tabMenu02(".topTab02","active");
+    tabMenu02(".handTab","active");
     tabFooter(".footerBtn","active");
     toggleBox(".toggleBtn","open");
     toggleTable(".toggleBTable","active");

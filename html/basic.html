@@ -50,20 +50,15 @@
 	<div class="easyui-navpanel"  >
         <!--头部tab 菜单-->
         <header class="dateHeader">
-            <ul class="topTab">
-				<li><a href="javascript:void(0)"  class="active">日指标</a></li>
-                <li><a href="javascript:void(0)" class="" >月指标</a></li>
-                <li><a href="javascript:void(0)" class="" >季度指标</a></li>
-			</ul>
+            <p class="topTab02">
+				<a href="javascript:void(0)"  class="active">盟市</a> <a href="javascript:void(0)">考核</a>
+			</p>
             <!--日历控件-->
             <div class="dateGuide">
                 <div class="yearText">年</div>
                 <fieldset class="fieldset">
-
                     <div><input id="" class="datepicker" value="当前选择日期：2015年12月24日" type="text">   <a class="toggleBtn open" href="javascript:void(0)">切换</a> </div>
-
                 </fieldset>
-
             </div>
             <!--//日历控件-->
             <!--指标标题-->
@@ -72,6 +67,7 @@
                 <h3 class="tableIco01">移动用户情况</h3>
                 <!--//切换列表图标类型-->
                 <a href="javascript:void(0)">收藏</a>
+                <a class="bookIco gray" href="javascript:void(0)">书签</a>
             </div>
             <!--//指标标题-->
         </header>
@@ -250,6 +246,14 @@
     </div>
     <!--easyui布局-->
 </div>
+
+<!--悬浮切换按钮-->
+<div class="handTab" id="handMove">
+    渠道<br>网格
+    <a href="javascript:void(0)"  class="active">渠道</a> <a href="javascript:void(0)">网格</a>
+</div>
+<!--//悬浮切换按钮-->
+<!--水印-->
 <div class="watermarkDate">
 
     <div class="watermark">
@@ -258,6 +262,7 @@
         <p>asdfasdf</p>
     </div>
 </div>
+<!--//水印-->
 <!--页面整体布局-->
 <script type="text/javascript">
     $(function(){
@@ -289,7 +294,7 @@
     touch.on(hammertime, 'swipeleft', function(ev){
         var display = $("#menu").css("display");
         if(display=="none"){
-            //返回 语句
+            alert("返回")
         }
     });
 
@@ -309,6 +314,37 @@
         targetMenu.hide(20);
     });
 
+    //悬浮图标
+    var targetMove =$("div#handMove");
+    touch.on(targetMove, 'touchstart', function(ev){
+        ev.preventDefault();
+
+    });
+    touch.on(targetMove, 'tap', function(ev){
+        targetMove.toggleClass("tap");
+    });
+    var dx, dy;
+
+    touch.on(targetMove, 'drag', function(ev){
+        dx = dx || 0;
+        dy = dy || 0;
+       // log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
+        var offx = dx + ev.x + "px";
+        var offy = dy + ev.y + "px";
+        this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
+        targetMove.addClass("hover")
+        targetMove.removeClass("tap");
+        touch.on(hammertime, 'swipeleft', function(evt){
+            evt.stopPropagation();
+        });
+
+    });
+
+    touch.on(targetMove, 'dragend', function(ev){
+        dx += ev.x;
+        dy += ev.y;
+       targetMove.removeClass("hover")
+    });
 
 </script>
 </body>
