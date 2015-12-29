@@ -19,7 +19,7 @@
     <script type="text/javascript" src="../js/hammer.min.js"></script>
     <script type="text/javascript" src="../js/layout.js"></script>
 </head>
-<body id="body">
+<body>
 <!--左侧滑动菜单-->
 <nav id="menu" class="menu">
     <!--个人信息显示-->
@@ -268,7 +268,7 @@
     $(function(){
         //日历控件
         dateUse()
-        addHammer(document.querySelector("#body"));
+        addHammer();
         moveHand();
     })
 
@@ -286,11 +286,11 @@
                 }
         );
     }
-
+    var mc = new Hammer(document.querySelector('body'));
     //新添加 滑动菜单插件
-    function addHammer(el) {
+    function addHammer() {
         var targetMenu =$("#menu");
-        var mc = new Hammer(el, { multiUser: true });
+
         //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
         mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
         //mc.get('pinch').set({ enable: true });
@@ -336,13 +336,14 @@ function moveHand(){
         ev.preventDefault();
 
     });
+
     touch.on(targetMove, 'tap', function(ev){
         targetMove.toggleClass("tap");
     });
     var dx, dy;
 
     touch.on(targetMove, 'drag', function(ev){
-        
+        mc.remove("swipe");
         dx = dx || 0;
         dy = dy || 0;
         //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
