@@ -280,10 +280,6 @@
     var targetMenu =$("#menu");
 
     //Swipe
-    var mc = new Hammer(el);
-    hammertime.get('swipeleft').set({
-        velocity:0.65
-    });
     touch.on(hammertime, 'swipeleft', function(ev){
         var display = $("#menu").css("display");
         if(display=="none"){

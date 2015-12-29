@@ -23,7 +23,7 @@ object, ol, output,
 p, pre, progress,
 q,
 s, samp, section, small, span, source, strike, strong, sub, sup,
-table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+table, tbody, tfoot, thead, th, tr, td, video, tt,
 u, ul,
 var{ margin:0; padding:0;}
 
@@ -224,11 +224,11 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .swiper-container { position: relative; z-index: 1; overflow: hidden; width: 100%; }
 .swiper-wrapper { position: relative;  width: 100%; height: 100%;  z-index: 1;display: -webkit-box; display: -moz-box; display: flex;  box-sizing: content-box;}
 .swiper-slide {  position: relative;  width: 100%;  -webkit-flex-shrink: 0;  flex-shrink: 0;  height: 100%; display: -webkit-box; display: -webkit-flex;display: flex;}
-.topNavGuide .swiper-container{height: 200px;/* 皮肤 */ background-color: #96cf24; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: left center; background-size: 100% 100%;}
+.topNavGuide .swiper-container{height: 200px;/* 皮肤 */ background-color: #f89b2b; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: left center; background-size: 100% 100%;}
 .topNav{ width: 100%;}
-.topNav li { float: left; width: 33.33%; padding-top:13px; height: 87px; color: #fff;}
+.topNav li { float: left; width: 33.33%; padding-top:10px; height: 84px; color: #fff;}
 .topNav li a { text-indent: -5000px; background-position:  center center; background-repeat: no-repeat; background-size: 40px 40px; width: 50px; height: 50px;  margin: 0 auto 5px; display: block; border:2px solid #eaeaea; border-radius:50%; -webkit-border-radius:50%;}
-.topNav li a.active {/* 皮肤 */box-shadow:0 0 5px 5px #80b11f; background-color: #80b11f;  }
+.topNav li a.active {/* 皮肤 */box-shadow:0 0 5px 5px #d3811f;/* 皮肤 */ background-color: #d3811f;/* 皮肤 */  }
 .topNav li span{ text-align: center; display: block;}
 .topNav li a.icon01{background-image: url("../images/common/ico01_topMenu.png");}
 .topNav li a.icon02{background-image: url("../images/common/ico02_topMenu.png");}
@@ -236,10 +236,28 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #92cc1f; color: #ffffff; fo
 .topNav li a.icon04{background-image: url("../images/common/ico04_topMenu.png");}
 .topNav li a.icon05{background-image: url("../images/common/ico05_topMenu.png");}
 .topNav li a.icon06{background-image: url("../images/common/ico06_topMenu.png");}
-.topNavGuide h3{ color: #88b928; height: 32px; background-color: #ffffff; text-align: center; position: relative;}
-.topNavGuide h3 strong{ display: inline-block; padding: 0 5px; font-size:1em; border-bottom: 1px solid #699b06; line-height: 32px; }
-.topNavGuide h3 .arrow-down{width: 0;height: 0; position:absolute; left:50%; margin-left:-2px; bottom: -5px; border-left: 4px solid transparent; border-right: 4px solid transparent;border-top: 5px solid #699b06; display: block;}
+.topNav li a.icon07{background-image: url("../images/common/ico07_topMenu.png");}
+.topNav li a.icon08{background-image: url("../images/common/ico08_topMenu.png");}
+.topNav li a.icon09{background-image: url("../images/common/ico09_topMenu.png");}
+.topNavGuide h3{ color: #f7941d;/* 皮肤 */ height: 32px; background-color: #ffffff; text-align: center; position: relative;}
+.topNavGuide h3 strong{ display: inline-block; padding: 0 5px; font-size:1em; border-bottom: 1px solid #f7941d;/* 皮肤 */ line-height: 32px; }
+.topNavGuide h3 .arrow-down{width: 0;height: 0; position:absolute; left:50%; margin-left:-2px; bottom: -5px; border-left: 4px solid transparent; border-right: 4px solid transparent;border-top: 5px solid #f7941d;/* 皮肤 */ display: block;}
 .topNavGuide h3 .arrow-down .arrow-down{left:-3px; bottom: 0px; margin: 0; border-left: 3px solid transparent; border-right: 3px solid transparent;border-top: 6px solid #ffffff;}
+
+/* Pagination Styles */
+.swiper-pagination { position: absolute; text-align: center; -webkit-transition: 300ms; -moz-transition: 300ms; -o-transition: 300ms; transition: 300ms; -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); z-index: 10; }
+.swiper-pagination.swiper-pagination-hidden { opacity: 0; }
+.swiper-pagination-bullet { width: 12px; height: 6px; display: inline-block; border-radius:5px; background: #000; opacity: 0.2; }
+button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; box-shadow: none; -moz-appearance: none; -ms-appearance: none; -webkit-appearance: none; appearance: none; }
+.swiper-pagination-clickable .swiper-pagination-bullet { cursor: pointer; }
+.swiper-pagination-white .swiper-pagination-bullet { background: #fff; }
+.swiper-pagination-bullet-active { opacity: 1; background: #ffffff; }
+.swiper-pagination-white .swiper-pagination-bullet-active { background: #fff; }
+.swiper-pagination-black .swiper-pagination-bullet-active { background: #000; }
+.swiper-container-vertical > .swiper-pagination { right: 10px; top: 50%; -webkit-transform: translate3d(0px, -50%, 0); -moz-transform: translate3d(0px, -50%, 0); -o-transform: translate(0px, -50%); -ms-transform: translate3d(0px, -50%, 0); transform: translate3d(0px, -50%, 0); }
+.swiper-container-vertical > .swiper-pagination .swiper-pagination-bullet { margin: 5px 0; display: block; }
+.swiper-container-horizontal > .swiper-pagination { bottom: 3px; left: 0; width: 100%; }
+.swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet { margin: 0 5px; }
 
 /* 趋势图 */
 .charBox{ border-bottom: 2px solid #e5e5e5; min-height:200px; padding: 5px; background-color: #ffffff; }

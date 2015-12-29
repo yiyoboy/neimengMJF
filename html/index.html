@@ -52,25 +52,27 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <ul class="topNav">
-                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
-                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
-                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
-                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
-                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
-                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标1</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标2</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon07">图标3</a><span>业务量</span></li>
+                            <li><a href="javascript:void(0)" class="icon08">图标4</a><span>收入监控</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标5</a><span>份额情况</span></li>
+                            <li><a href="javascript:void(0)" class="icon09">图标6</a><span>我的收藏</span></li>
                         </ul>
                     </div>
                     <div class="swiper-slide">
                         <ul class="topNav">
-                            <li><a href="javascript:void(0)" class="icon01">图标1</a><span>我的收入</span></li>
-                            <li><a href="javascript:void(0)" class="icon02">图标2</a><span>我的成本</span></li>
-                            <li><a href="javascript:void(0)" class="icon03">图标3</a><span>移动用户</span></li>
-                            <li><a href="javascript:void(0)" class="icon04">图标4</a><span>固网用户</span></li>
-                            <li><a href="javascript:void(0)" class="icon05">图标5</a><span>我的考核</span></li>
-                            <li><a href="javascript:void(0)" class="icon06">图标6</a><span>我的支撑</span></li>
+                            <li><a href="javascript:void(0)" class="icon04">图标1</a><span>移动用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon03">图标2</a><span>固网用户</span></li>
+                            <li><a href="javascript:void(0)" class="icon07">图标3</a><span>业务量</span></li>
+                            <li><a href="javascript:void(0)" class="icon08">图标4</a><span>收入监控</span></li>
+                            <li><a href="javascript:void(0)" class="icon02">图标5</a><span>份额情况</span></li>
+                            <li><a href="javascript:void(0)" class="icon09">图标6</a><span>我的收藏</span></li>
                         </ul>
                     </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
             <!-- //Swiper -->
             <!--指标标题-->
@@ -103,28 +105,39 @@
 <!--页面整体布局-->
 <script type="text/javascript">
 
-    var slideout = new Slideout({
-        'panel': document.getElementById('main'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
-    });
+    //新添加 滑动菜单插件
+    var hammertime =$("body");
+    var targetMenu =$("#menu");
 
-    var target = document.getElementById("main");
-    touch.on(target, 'swipeleft', function(ev){
-        var display = $(".slideout-menu").css("display");
+    //Swipe
+    touch.on(hammertime, 'swipeleft', function(ev){
+        var display = $("#menu").css("display");
         if(display=="none"){
-            window.location.href="http://www.baidu.com";
+            //返回 语句
         }
     });
-    /*document.querySelector('.js-slideout-toggle').addEventListener('click', function() {slideout.toggle();});*/
-    document.querySelector('.menu').addEventListener('click', function(eve) {
-        slideout.close();
+
+    hammertime.on("swipeleft", function(evt) {
+        var display = $("#menu").css("display");
+        if(display=="none"){
+        }
+        else{
+            $("#menu").hide(20);
+        }
     });
-    function aload(t){ "use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t;}
+
+    hammertime.on("swiperight", function() {
+        targetMenu.show(20);
+    });
+    targetMenu.on("tap", function() {
+        targetMenu.hide(20);
+    });
 
     /* 滚动菜单 */
-    var swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+            paginationClickable: true
+    });
 </script>
 </body>
 </html>
