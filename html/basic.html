@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>承包助手</title>
+	<title>手机经分</title>
 	<link rel="stylesheet" type="text/css" href="../css/themes/metro/easyui.css">
     <link rel="stylesheet" type="text/css" href="../css/themes/mobile.css">
 	<link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
@@ -269,7 +269,7 @@
         //日历控件
         dateUse()
         addHammer();
-        moveHand();
+
     })
 
     function dateUse(){
@@ -286,11 +286,11 @@
                 }
         );
     }
-    var mc = new Hammer(document.querySelector('body'));
+
     //新添加 滑动菜单插件
     function addHammer() {
         var targetMenu =$("#menu");
-
+        var mc = new Hammer(document.querySelector('body'));
         //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
         mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
         //mc.get('pinch').set({ enable: true });
@@ -301,20 +301,16 @@
             if(ev.deltaX>200 & display=="none"){
                 targetMenu.show(20);
             }
-
         });
-
         mc.on("swiperight", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if(ev.deltaX>200 & display=="none"){
                 targetMenu.show(20);
             }
-
         });
         targetMenu.on("tap", function (ev) {
                 targetMenu.hide(20);
-
         });
         mc.on("swipeleft", function (ev) {
             ev.preventDefault();
@@ -329,25 +325,62 @@
     }
 
     //悬浮图标
+        var moveHammer = null;
+        var posX = 0;
+        var posY = 0;
+        var lastPosX = 0;
+        var  lastPosY = 0;
+        $(function () {
+            DragImage();
+        });
 
+
+        function DragImage() {
+
+
+            var ObjHammer = new Hammer(document.querySelector('#handMove'));
+            ObjHammer.get('rotate').set({ enable: true });
+            moveHammer = ObjHammer.on("drag dragend", function (ev) {
+                ev.preventDefault();    //取消事件的默认动作（重要）
+                manageMultitouch(ev);
+                alert(1);
+            });
+
+            function manageMultitouch(ev) {
+                switch (ev.type) {
+                    case 'drag':
+                        posX = ev.gesture.deltaX + lastPosX;
+                        posY = ev.gesture.deltaY + lastPosY;
+                        break;
+                    case 'dragend':
+                        lastPosX = posX;
+                        lastPosY = posY;
+                        break;
+                }
+                transform =
+                        "translate(" + posX + "px," + posY + "px)";
+                objImage[0].style.transform = transform;
+                objImage[0].style.oTransform = transform;
+                objImage[0].style.msTransform = transform;
+                objImage[0].style.mozTransform = transform;
+                objImage[0].style.webkitTransform = transform;
+            }
+        }
+    /*
 function moveHand(){
-
     var targetMove=$("#handMove");
-    targetMove.on("swipeleft", function(ev) {
-        ev.preventDefault()
-        ev.stopPropagation()
-        console.info(2)
-    });
-    targetMove.on("swiperight", function(ev) {
-        ev.preventDefault()
-        ev.stopPropagation()
-        console.info(2)
+    var handMove = new Hammer(document.querySelector('#handMove'));
+    handMove.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+    //悬浮图标
+    handMove.on("swipe", function(ev) {
+        ev.preventDefault();
+        //ev.stopPropagation();
+        console.info(ev)
     });
     touch.on(targetMove, 'touchstart', function(ev){
         ev.preventDefault();
 
     });
-
     touch.on(targetMove, 'tap', function(ev){
         targetMove.toggleClass("tap");
     });
@@ -372,7 +405,7 @@ function moveHand(){
         dy += ev.y;
         targetMove.removeClass("hover")
     });
-}
+}*/
 
 </script>
 </body>
