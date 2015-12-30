@@ -331,7 +331,18 @@
     //悬浮图标
 
 function moveHand(){
+
     var targetMove=$("#handMove");
+    targetMove.on("swipeleft", function(ev) {
+        ev.preventDefault()
+        ev.stopPropagation()
+        console.info(2)
+    });
+    targetMove.on("swiperight", function(ev) {
+        ev.preventDefault()
+        ev.stopPropagation()
+        console.info(2)
+    });
     touch.on(targetMove, 'touchstart', function(ev){
         ev.preventDefault();
 
@@ -343,7 +354,6 @@ function moveHand(){
     var dx, dy;
 
     touch.on(targetMove, 'drag', function(ev){
-        mc.remove("swipe");
         dx = dx || 0;
         dy = dy || 0;
         //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
@@ -352,7 +362,7 @@ function moveHand(){
         this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
         targetMove.addClass("hover")
         targetMove.removeClass("tap");
-        console.log(ev);
+        //console.log(ev);
 
 
     });
@@ -361,7 +371,6 @@ function moveHand(){
         dx += ev.x;
         dy += ev.y;
         targetMove.removeClass("hover")
-        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
     });
 }
 
