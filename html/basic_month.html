@@ -310,6 +310,41 @@
         });
     }
 
+    //悬浮图标
+
+    function moveHand(){
+        var targetMove=$("#handMove");
+        touch.on(targetMove, 'touchstart', function(ev){
+            ev.preventDefault();
+
+        });
+        touch.on(targetMove, 'tap', function(ev){
+            targetMove.toggleClass("tap");
+        });
+        var dx, dy;
+
+        touch.on(targetMove, 'drag', function(ev){
+
+            dx = dx || 0;
+            dy = dy || 0;
+            //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
+            var offx = dx + ev.x + "px";
+            var offy = dy + ev.y + "px";
+            this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
+            targetMove.addClass("hover")
+            targetMove.removeClass("tap");
+            console.log(ev);
+
+
+        });
+
+        touch.on(targetMove, 'dragend', function(ev){
+            dx += ev.x;
+            dy += ev.y;
+            targetMove.removeClass("hover")
+
+        });
+    }
 
 </script>
 

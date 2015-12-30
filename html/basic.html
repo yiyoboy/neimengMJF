@@ -327,36 +327,28 @@
     //悬浮图标
 
     function moveHand(){
-        var targetMove=$("#handMove");
-        touch.on(targetMove, 'touchstart', function(ev){
+        var $moveH =$("#handMove");
+        var targetMove=new Hammer(document.querySelector('#handMove'));
+        targetMove.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+
+        targetMove.on("pan", function (ev) {
             ev.preventDefault();
 
-        });
-        touch.on(targetMove, 'tap', function(ev){
-            targetMove.toggleClass("tap");
-        });
-        var dx, dy;
 
-        touch.on(targetMove, 'drag', function(ev){
 
+            var dx,dy;
             dx = dx || 0;
             dy = dy || 0;
             //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
-            var offx = dx + ev.x + "px";
-            var offy = dy + ev.y + "px";
-            this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
+            var offx = dx + ev.deltaX + "px";
+            var offy = dy + ev.deltaY + "px";
+            this.style.transform = "translate3d(" + offx + "," + offy + ",0)";
             targetMove.addClass("hover")
             targetMove.removeClass("tap");
-            console.log(ev);
-
-
-        });
-
-        touch.on(targetMove, 'dragend', function(ev){
-            dx += ev.x;
-            dy += ev.y;
-            targetMove.removeClass("hover")
-
+        })
+        targetMove.on("tap", function (ev) {
+            $moveH.toggleClass("tap");
         });
     }
 
