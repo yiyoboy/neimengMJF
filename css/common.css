@@ -399,7 +399,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
 
 /*悬浮切换按钮*/
-.handTab{border-radius:50%; line-height: 20px; padding-top: 10px; text-align: center; color: #ffffff;background: #f7941d;  position: absolute;  width: 60px; height: 50px;  bottom: 70px; right:30px; opacity: 0.5; cursor: pointer; }
+.handTab{border-radius:50%; line-height: 20px; z-index: 101; padding-top: 10px; text-align: center; color: #ffffff;background: #f7941d;  position: absolute;  width: 60px; height: 50px;  bottom: 70px; right:30px; opacity: 0.5; cursor: pointer; }
 .handTab.hover{ opacity: 1;}
 .handTab.tap{ opacity: 1;}
 .handTab.tap a{ display: block;}

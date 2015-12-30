@@ -361,7 +361,7 @@ function moveHand(){
         dx += ev.x;
         dy += ev.y;
         targetMove.removeClass("hover")
-
+        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
     });
 }
 
