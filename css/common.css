@@ -430,6 +430,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 /* 收藏 页面*/
 .collection{}
 .collection .titArea h3 {background-image: url("../images/common/ico03_menu.png");}
+.collection .titArea h3.icoBook {background-image: url("../images/common/ico03_book.png");}
 .collBox{ padding: 10px;}
 .collBox ul{ overflow: hidden;}
 .collBox ul li.onSelect{background-color: #f7941d; }
@@ -460,6 +461,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .icoDialog{ position:absolute; top: 0; right: 10px; z-index: 9999999; display:block; width: 22px; height: 26px; background: url("../images/common/ico_dilog.png") center center no-repeat; background-size: 100%;}
 .ico01Dialog{background-image: url("../images/common/ico01_dilog.png");}
 .ico02Dialog{background-image: url("../images/common/ico12_dilog.png");}
+.ico03Dialog{background-image: url("../images/common/ico03_bookW.png");}
 .dialogCon{ padding: 240px 20px 10px;   background: url("../images/common/ico02_dilog.png") center 30px no-repeat;}
 .dialogCon p{ width: 80%; margin:0 auto; line-height:1.5; color: #ffffff;font-size: 18px; text-align: center;}
 .dialogCon .inputDialog{ border-bottom: 1px solid #e9f5d2;}
@@ -501,6 +503,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .noticeCon .titArea h3 {background-image: url("../images/common/tit_notice@2x.png");}
 .noticeInformationCon .titArea h3 {background-image: url("../images/common/tit_notice@2x.png");}
 .setCon .titArea h3 {background-image: url("../images/common/tit_set@2x.png");}
+.messCon .titArea h3 {background-image: url("../images/common/tit_message@2x.png");}
 /* 子页通用 列表 按钮 */
 .btnItem {display: block; margin: 0 16px;}
 

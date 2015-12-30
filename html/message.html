@@ -48,18 +48,38 @@
 	<div class="easyui-navpanel"  >
         <!--页面内容框架-->
         <div id="center">
-            <div class="findPasswordCon">
+            <div class="messCon">
                 <div class="titArea">
-                    <h3>找回密码</h3>
+                    <h3>指标解释</h3>
                 </div>
-                <div class="listGroup mt_10">
-                    <dl>
-                        <dt>验证码</dt>
-                        <dd><input type="text" value="" id="" name="" /> </dd>
-                    </dl>
+                <div class="listGroup listGroupOne">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>出账收入合计</strong><em class="iconUserOperation">张勇</em><em class="iconTimeOperation">2015-12-12</em></h4>
+                                <p>
+                                    每月总账单收入明细剔除不列收、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>出账收入增量</strong><em class="iconUserOperation">张勇</em><em class="iconTimeOperation">2015-12-12</em></h4>
+                                <p>
+                                    出账用户为开户时间在统计期当年，每月总账单收入明细剔除不列入、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <h4><strong>出账收入存量</strong><em class="iconUserOperation">张勇</em><em class="iconTimeOperation">2015-12-12</em></h4>
+                                <p>
+                                    开户时间小于统计期当年的出账用户每月总账单收入明细剔除不列收、赠费、得到的账单收入，单位：万元
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="hintTxt">验证码有效期为168秒</p>
-                <a class="btnItem" href="javascript:void(0);">发送验证码  &   确定</a>
             </div>
         </div>
         <!--//页面内容框架-->
@@ -109,6 +129,8 @@
             }
         });
     }
+
+
 </script>
 </body>
 </html>

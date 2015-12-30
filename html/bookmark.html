@@ -48,27 +48,46 @@
 	<div class="easyui-navpanel"  >
         <!--页面内容框架-->
         <div id="center">
-            <div class="findPasswordCon">
+            <div class="collection">
                 <div class="titArea">
-                    <h3>找回密码</h3>
+                    <h3 class="icoBook">书签</h3>
+                    <ul class="collItem">
+                        <li><a href="javascript:void(0)" class="blockIco active">列表</a></li>
+                        <li><a href="javascript:void(0)" class="listIco">平铺</a></li>
+                    </ul>
                 </div>
-                <div class="listGroup mt_10">
-                    <dl>
-                        <dt>验证码</dt>
-                        <dd><input type="text" value="" id="" name="" /> </dd>
-                    </dl>
+                <div class="collBox lineColl">
+                    <ul>
+                        <li class="onSelect"><strong>日发展</strong> <a href="javascript:void(0)">删除</a></li>
+                        <li><strong>月发展</strong> <a href="javascript:void(0)">删除</a></li>
+                        <li><strong>出帐收入</strong> <a href="javascript:void(0)">删除</a></li>
+                        <li class="collAdd onSelect"><a href="javascript:void(0)" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a></li>
+                    </ul>
+                    <a class="btnItem activeOne" href="javascript:void(0);" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a>
                 </div>
-                <p class="hintTxt">验证码有效期为168秒</p>
-                <a class="btnItem" href="javascript:void(0);">发送验证码  &   确定</a>
+
             </div>
         </div>
         <!--//页面内容框架-->
+
     </div>
     <!--easyui布局-->
 </div>
+<!--收藏弹出层-->
+<div id="dlg1" class="easyui-dialog dialogGuide" style="width: 70%" data-options="inline:true,modal:true,closed:true,title:'Information'">
+    <div class="icoDialog ico03Dialog"></div>
+    <div class="dialogCon">
+        <!--报表输入-->
+        <p class="inputDialog"><input type="text" placeholder="请输入书签名称" name="" id=""/></p>
+        <!--//报表输入-->
+    </div>
+    <div class="dialogBTnBox">
+        <a href="javascript:void(0)" class="dialogBtn"  onclick="$('#dlg1').dialog('close')">确定</a>
+    </div>
+</div>
+<!--收藏弹出层-->
 <!--页面整体布局-->
 <script type="text/javascript">
-
     $(function(){
         addHammer();
 
@@ -109,6 +128,8 @@
             }
         });
     }
+
+
 </script>
 </body>
 </html>

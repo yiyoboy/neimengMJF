@@ -153,33 +153,46 @@
 <!--确定绑定弹出层-->
 <script type="text/javascript">
 
+    $(function(){
+        addHammer();
+
+    })
     //新添加 滑动菜单插件
-    var hammertime =$("body");
-    var targetMenu =$("#menu");
-
-    //Swipe
-    touch.on(hammertime, 'swipeleft', function(ev){
-        var display = $("#menu").css("display");
-        if(display=="none"){
-            //返回 语句
-        }
-    });
-
-    hammertime.on("swipeleft", function(evt) {
-        var display = $("#menu").css("display");
-        if(display=="none"){
-        }
-        else{
-            $("#menu").hide(20);
-        }
-    });
-
-    hammertime.on("swiperight", function() {
-        targetMenu.show(20);
-    });
-    targetMenu.on("tap", function() {
-        targetMenu.hide(20);
-    });
+    function addHammer() {
+        var targetMenu =$("#menu");
+        var mc = new Hammer(document.querySelector('body'));
+        //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        //mc.get('pinch').set({ enable: true });
+        //mc.get('rotate').set({ enable: true });
+        mc.on("swiperight", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if(ev.deltaX>200 & display=="none"){
+                targetMenu.show(20);
+            }
+        });
+        mc.on("swiperight", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if(ev.deltaX>200 & display=="none"){
+                targetMenu.show(20);
+            }
+        });
+        targetMenu.on("tap", function (ev) {
+            targetMenu.hide(20);
+        });
+        mc.on("swipeleft", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if( ev.deltaX<-200 & display=="block"){
+                targetMenu.hide(20);
+            }
+            else if(ev.deltaX<-200){
+                alert("返回");
+            }
+        });
+    }
 
 
 </script>

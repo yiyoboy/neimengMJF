@@ -269,7 +269,7 @@
         //日历控件
         dateUse()
         addHammer();
-
+        moveHand();
     })
 
     function dateUse(){
@@ -325,87 +325,40 @@
     }
 
     //悬浮图标
-        var moveHammer = null;
-        var posX = 0;
-        var posY = 0;
-        var lastPosX = 0;
-        var  lastPosY = 0;
-        $(function () {
-            DragImage();
+
+    function moveHand(){
+        var targetMove=$("#handMove");
+        touch.on(targetMove, 'touchstart', function(ev){
+            ev.preventDefault();
+
+        });
+        touch.on(targetMove, 'tap', function(ev){
+            targetMove.toggleClass("tap");
+        });
+        var dx, dy;
+
+        touch.on(targetMove, 'drag', function(ev){
+
+            dx = dx || 0;
+            dy = dy || 0;
+            //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
+            var offx = dx + ev.x + "px";
+            var offy = dy + ev.y + "px";
+            this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
+            targetMove.addClass("hover")
+            targetMove.removeClass("tap");
+            console.log(ev);
+
+
         });
 
+        touch.on(targetMove, 'dragend', function(ev){
+            dx += ev.x;
+            dy += ev.y;
+            targetMove.removeClass("hover")
 
-        function DragImage() {
-
-
-            var ObjHammer = new Hammer(document.querySelector('#handMove'));
-            ObjHammer.get('rotate').set({ enable: true });
-            moveHammer = ObjHammer.on("drag dragend", function (ev) {
-                ev.preventDefault();    //取消事件的默认动作（重要）
-                manageMultitouch(ev);
-                alert(1);
-            });
-
-            function manageMultitouch(ev) {
-                switch (ev.type) {
-                    case 'drag':
-                        posX = ev.gesture.deltaX + lastPosX;
-                        posY = ev.gesture.deltaY + lastPosY;
-                        break;
-                    case 'dragend':
-                        lastPosX = posX;
-                        lastPosY = posY;
-                        break;
-                }
-                transform =
-                        "translate(" + posX + "px," + posY + "px)";
-                objImage[0].style.transform = transform;
-                objImage[0].style.oTransform = transform;
-                objImage[0].style.msTransform = transform;
-                objImage[0].style.mozTransform = transform;
-                objImage[0].style.webkitTransform = transform;
-            }
-        }
-    /*
-function moveHand(){
-    var targetMove=$("#handMove");
-    var handMove = new Hammer(document.querySelector('#handMove'));
-    handMove.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-    //悬浮图标
-    handMove.on("swipe", function(ev) {
-        ev.preventDefault();
-        //ev.stopPropagation();
-        console.info(ev)
-    });
-    touch.on(targetMove, 'touchstart', function(ev){
-        ev.preventDefault();
-
-    });
-    touch.on(targetMove, 'tap', function(ev){
-        targetMove.toggleClass("tap");
-    });
-    var dx, dy;
-
-    touch.on(targetMove, 'drag', function(ev){
-        dx = dx || 0;
-        dy = dy || 0;
-        //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
-        var offx = dx + ev.x + "px";
-        var offy = dy + ev.y + "px";
-        this.style.webkitTransform = "translate3d(" + offx + "," + offy + ",0)";
-        targetMove.addClass("hover")
-        targetMove.removeClass("tap");
-        //console.log(ev);
-
-
-    });
-
-    touch.on(targetMove, 'dragend', function(ev){
-        dx += ev.x;
-        dy += ev.y;
-        targetMove.removeClass("hover")
-    });
-}*/
+        });
+    }
 
 </script>
 </body>
