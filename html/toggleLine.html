@@ -48,36 +48,30 @@
 	<div class="easyui-navpanel"  >
         <!--页面内容框架-->
         <div id="center">
-            <div class="messCon">
+            <div class="toggleGridCon">
                 <div class="titArea">
-                    <h3>消息</h3>
+                    <h3>切换渠道</h3>
                 </div>
-                <div class="messSearch">
-                    <input type="text" name="" placeholder="输入关键字" id="">
-                    <a href="javascript:void(0);">添加</a>
+                <div class="listGroup">
+                    <ul>
+                        <li><a href="javascript:void(0);">全渠道<span class="bedeck"></span></a> </li>
+                        <li><a href="javascript:void(0);">政企<span class="bedeck"></span></a> </li>
+                        <li><a href="javascript:void(0);">公众<span class="bedeck"></span></a> </li>
+                        <li><a href="javascript:void(0);">电渠<span class="bedeck"></span></a> </li>
+                    </ul>
+                    <a class="btnItem activeOne mt_110" href="javascript:void(0);">切换渠道</a>
                 </div>
-                <h2>常见问题</h2>
-                <div class="listGroup ">
-                    <ol>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <h4><strong>第一个常见问题</strong></h4>
-                                <p><span>20</span>第一个常见问题内容...</p>
-                            </a>
-                        </li>
 
-                    </ol>
-                </div>
-                <p><a class="btnItem activeTwo" href="javascript:void(0);">全部信息</a> <a class="btnItem borerBtn" href="javascript:void(0);">我的提问</a></p>
             </div>
         </div>
         <!--//页面内容框架-->
+
     </div>
     <!--easyui布局-->
 </div>
+
 <!--页面整体布局-->
 <script type="text/javascript">
-
     $(function(){
         addHammer();
 
