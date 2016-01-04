@@ -268,8 +268,9 @@
     $(function(){
         //日历控件
         dateUse()
-        addHammer();
+        addHammer(200);
         moveHand();
+
     })
 
     function dateUse(){
@@ -288,7 +289,7 @@
     }
 
     //新添加 滑动菜单插件
-    function addHammer() {
+    function addHammer(speed) {
         var targetMenu =$("#menu");
         var mc = new Hammer(document.querySelector('body'));
         //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
@@ -298,14 +299,14 @@
         mc.on("swiperight", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
-            if(ev.deltaX>200 & display=="none"){
+            if(ev.deltaX>speed & display=="none"){
                 targetMenu.show(20);
             }
         });
         mc.on("swiperight", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
-            if(ev.deltaX>200 & display=="none"){
+            if(ev.deltaX>speed & display=="none"){
                 targetMenu.show(20);
             }
         });
@@ -315,10 +316,10 @@
         mc.on("swipeleft", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
-            if( ev.deltaX<-200 & display=="block"){
+            if( ev.deltaX<-speed & display=="block"){
                 targetMenu.hide(20);
             }
-            else if(ev.deltaX<-200){
+            else if(ev.deltaX<-speed){
                 alert("返回");
             }
         });
@@ -331,23 +332,37 @@
         var targetMove=new Hammer(document.querySelector('#handMove'));
         targetMove.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 
-
+        var dx,dy;
         targetMove.on("pan", function (ev) {
             ev.preventDefault();
-
-
-
-            var dx,dy;
+        })
+        targetMove.on("onpanstart", function (ev) {
+            ev.preventDefault();
+            $moveH.addClass("hover");
+            addHammer(5000);
+        });
+        targetMove.on("panmove", function (ev) {
+            ev.preventDefault();
             dx = dx || 0;
             dy = dy || 0;
-            //console.log("当前x值为:" + dx + ", 当前y值为:" + dy +".");
             var offx = dx + ev.deltaX + "px";
             var offy = dy + ev.deltaY + "px";
-            this.style.transform = "translate3d(" + offx + "," + offy + ",0)";
-            targetMove.addClass("hover")
-            targetMove.removeClass("tap");
-        })
+            $moveH.addClass("hover");
+            $moveH.css({
+                'transform': 'translate(' + offx + ',' + offy + ')',
+            });
+            addHammer(5000);
+        });
+        targetMove.on("panend", function (ev) {
+            ev.preventDefault();
+            dx += ev.deltaX;
+            dy += ev.deltaY;
+            $moveH.removeClass("hover")
+            addHammer(5000);
+
+        });
         targetMove.on("tap", function (ev) {
+            ev.preventDefault();
             $moveH.toggleClass("tap");
         });
     }
