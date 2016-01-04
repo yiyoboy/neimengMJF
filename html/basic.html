@@ -296,6 +296,9 @@
         mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
         //mc.get('pinch').set({ enable: true });
         //mc.get('rotate').set({ enable: true });
+        function getMc(){
+            return mc;
+        }
         mc.on("swiperight", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
@@ -330,6 +333,7 @@
     function moveHand(){
         var $moveH =$("#handMove");
         var targetMove=new Hammer(document.querySelector('#handMove'));
+        targetMove.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
         targetMove.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 
         var dx,dy;
@@ -339,7 +343,7 @@
         targetMove.on("onpanstart", function (ev) {
             ev.preventDefault();
             $moveH.addClass("hover");
-            addHammer(5000);
+
         });
         targetMove.on("panmove", function (ev) {
             ev.preventDefault();
@@ -351,15 +355,24 @@
             $moveH.css({
                 'transform': 'translate(' + offx + ',' + offy + ')',
             });
-            addHammer(5000);
+
         });
         targetMove.on("panend", function (ev) {
             ev.preventDefault();
             dx += ev.deltaX;
             dy += ev.deltaY;
-            $moveH.removeClass("hover")
-            addHammer(5000);
+            $moveH.removeClass("hover");
 
+        });
+        targetMove.on("swipeleft", function(ev) {
+            ev.preventDefault();
+            ev.srcEvent.stopPropagation();
+            //console.log(ev);
+        });
+        targetMove.on("swiperight", function(ev) {
+            ev.preventDefault();
+            ev.srcEvent.stopPropagation();
+           //console.log(ev);
         });
         targetMove.on("tap", function (ev) {
             ev.preventDefault();
