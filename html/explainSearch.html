@@ -77,45 +77,9 @@
 <script type="text/javascript">
 
     $(function(){
-        addHammer();
+        addHammer(200);
 
     })
-    //新添加 滑动菜单插件
-    function addHammer() {
-        var targetMenu =$("#menu");
-        var mc = new Hammer(document.querySelector('body'));
-        //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-        //mc.get('pinch').set({ enable: true });
-        //mc.get('rotate').set({ enable: true });
-        mc.on("swiperight", function (ev) {
-            ev.preventDefault();
-            var display = $("#menu").css("display");
-            if(ev.deltaX>200 & display=="none"){
-                targetMenu.show(20);
-            }
-        });
-        mc.on("swiperight", function (ev) {
-            ev.preventDefault();
-            var display = $("#menu").css("display");
-            if(ev.deltaX>200 & display=="none"){
-                targetMenu.show(20);
-            }
-        });
-        targetMenu.on("tap", function (ev) {
-            targetMenu.hide(20);
-        });
-        mc.on("swipeleft", function (ev) {
-            ev.preventDefault();
-            var display = $("#menu").css("display");
-            if( ev.deltaX<-200 & display=="block"){
-                targetMenu.hide(20);
-            }
-            else if(ev.deltaX<-200){
-                alert("返回");
-            }
-        });
-    }
 
 </script>
 </body>

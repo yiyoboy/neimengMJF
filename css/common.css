@@ -403,9 +403,12 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .handTab.hover{ opacity: 1;}
 .handTab.tap{ opacity: 1;}
 .handTab.tap a{ display: block;}
-.handTab a{position: absolute; left: -20px; top: -50px; border-radius:50%; border: 1px solid #f7941d; color: #000000; font-size:14px;display: none; width: 40px;  height: 40px; line-height: 40px;  background: #ffffff; text-decoration: none;}
-.handTab a:last-child{ top: 0px; left: -50px;}
+.handTab a{ animation: fade-in;/*动画名称*/  animation-duration: 0.2s;/*动画持续时间*/  -webkit-animation:fade-in 0.2s;left: -20px; top: -50px;/*针对webkit内核*/  position: absolute;   border-radius:50%; border: 1px solid #f7941d; color: #000000; font-size:14px;display: none; width: 40px;  height: 40px; line-height: 40px;  background: #ffffff; text-decoration: none;}
+.handTab a:last-child{;left: -50px; top: -10px;animation: fade-in02;/*动画名称*/  animation-duration: 0.2s;/*动画持续时间*/  -webkit-animation:fade-in02 0.2s;}
 .handTab a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;  }
+@-webkit-keyframes fade-in{  0% { left: 0px; top: 0px; opacity: 0;} 100% { left: -20px; top: -50px; opacity: 1;} }
+@-webkit-keyframes fade-in02{  0% { left: 0px; top: 0px; opacity: 0;}  100% { left: -50px; top: -10px; opacity: 1;} }
+
 
 /* login */
 body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
