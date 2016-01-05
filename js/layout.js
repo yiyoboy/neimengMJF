@@ -94,11 +94,6 @@ function moveHand(){
         ev.srcEvent.stopPropagation();
         //console.log(ev);
     });
-    targetMove.on("swiperight", function(ev) {
-        ev.preventDefault();
-        ev.srcEvent.stopPropagation();
-        //console.log(ev);
-    });
     targetMove.on("tap", function (ev) {
         ev.preventDefault();
         $moveH.toggleClass("tap");

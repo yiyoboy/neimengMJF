@@ -247,7 +247,11 @@
 
     <!--easyui布局-->
 </div>
-
+<!--悬浮切换按钮-->
+<div class="handTab" id="handMove">
+    <a href="javascript:void(0)"  class="active">渠道</a> <a href="javascript:void(0)">网格</a>
+</div>
+<!--//悬浮切换按钮-->
 
 <!--页面整体布局-->
 <script type="text/javascript">
@@ -255,6 +259,7 @@
         //日历控件
         $(".Month").simpleCanleder();
         addHammer(200);
+        moveHand();
     })
 
 </script>
