@@ -114,12 +114,7 @@ function moveHand(){
         $moveH.removeClass("hover");
 
     });
-    targetMove.on("swipeleft", function(ev) {
-        ev.preventDefault();
-        ev.srcEvent.stopPropagation();
-        //console.log(ev);
-    });
-    targetMove.on("swiperight", function(ev) {
+    targetMove.on("swipe", function(ev) {
         ev.preventDefault();
         ev.srcEvent.stopPropagation();
         //console.log(ev);
