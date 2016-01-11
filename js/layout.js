@@ -80,6 +80,8 @@ function addHammer(speed) {
 
 function moveHand(){
     var $moveH =$("#handMove");
+    var $moveLink =$("#handMove a");
+    var moveText= $moveH.find("span");
     var targetMove=new Hammer(document.querySelector('#handMove'));
     targetMove.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
     targetMove.get('pan').set({ direction: Hammer.DIRECTION_ALL });
@@ -117,11 +119,21 @@ function moveHand(){
         ev.srcEvent.stopPropagation();
         //console.log(ev);
     });
+    targetMove.on("swiperight", function(ev) {
+        ev.preventDefault();
+        ev.srcEvent.stopPropagation();
+        //console.log(ev);
+    });
     targetMove.on("tap", function (ev) {
         ev.preventDefault();
         $moveH.toggleClass("tap");
     });
+    $moveLink.on("tap", function (ev) {
+        ev.preventDefault();
+        moveText.text($(this).text());
+    });
 }
+
 
 /* 简易表单验证 */
 $(function(){
