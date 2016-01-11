@@ -385,6 +385,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
 .tableTitle h3.tableIco04{background-image:url("../images/common/large_smartart_on.png");}
 .tableTitle a{ position:absolute;top: 10px; right: 10px; width: 16px; height: 16px; background-image: url("../images/common/ico03_menu.png");  background-position:  center center; background-repeat: no-repeat; background-size: 16px 16px;  text-indent: -5000px;}
+.tableTitle a.gray{ background-image: url("../images/common/ico03_menuG.png");}
 .tableTitle a.bookIco{background-image: url("../images/common/ico03_book.png"); right: 30px; top: 11px;}
 .tableTitle a.bookIco.gray{background-image: url("../images/common/ico03_bookG.png");}
 /* 指标表格 */

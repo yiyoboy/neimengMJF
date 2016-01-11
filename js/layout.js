@@ -15,42 +15,65 @@ $(function(){
 
 //新添加 滑动菜单插件
 function addHammer(speed) {
-    var targetMenu =$("#menu");
-    var mc = new Hammer(document.querySelector('body'));
-    //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-    //mc.get('pinch').set({ enable: true });
-    //mc.get('rotate').set({ enable: true });
-    function getMc(){
-        return mc;
-    }
-    mc.on("swiperight", function (ev) {
-        ev.preventDefault();
-        var display = $("#menu").css("display");
-        if(ev.deltaX>speed & display=="none"){
-            targetMenu.show(20);
+
+    //判断浏览器内核
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+        var hammertime =$("body");
+        var targetMenu =$("#menu");
+        //Swipe
+        touch.on(hammertime, 'swipeleft', function(ev){
+            var display = $("#menu").css("display");
+            if(display=="none" && ev.distanceX< -speed){
+                getBack();
+            }
+            else {
+                targetMenu.hide(20);
+            }
+        });
+        touch.on(hammertime, 'swiperight', function(ev){
+            if( ev.distanceX > speed){
+                targetMenu.show(20);
+
+            }
+        });
+    } else {
+        var targetMenu =$("#menu");
+        var mc = new Hammer(document.querySelector('body'));
+        //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        //mc.get('pinch').set({ enable: true });
+        //mc.get('rotate').set({ enable: true });
+        function getMc(){
+            return mc;
         }
-    });
-    mc.on("swiperight", function (ev) {
-        ev.preventDefault();
-        var display = $("#menu").css("display");
-        if(ev.deltaX>speed & display=="none"){
-            targetMenu.show(20);
-        }
-    });
-    targetMenu.on("tap", function (ev) {
-        targetMenu.hide(20);
-    });
-    mc.on("swipeleft", function (ev) {
-        ev.preventDefault();
-        var display = $("#menu").css("display");
-        if( ev.deltaX<-speed & display=="block"){
+        mc.on("swiperight", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if(ev.deltaX>speed&&display=="none"){
+                targetMenu.show(20);
+            }
+        });
+        mc.on("swiperight", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if(ev.deltaX>speed&&display=="none"){
+                targetMenu.show(20);
+            }
+        });
+        targetMenu.on("tap", function (ev) {
             targetMenu.hide(20);
-        }
-        else if(ev.deltaX<-speed){
-            alert("返回");
-        }
-    });
+        });
+        mc.on("swipeleft", function (ev) {
+            ev.preventDefault();
+            var display = $("#menu").css("display");
+            if( ev.deltaX<-speed&&display=="block"){
+                targetMenu.hide(20);
+            }
+            else if(ev.deltaX<-speed){
+                getBack();
+            }
+        });
+    };
 }
 
 //悬浮图标

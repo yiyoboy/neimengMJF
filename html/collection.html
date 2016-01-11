@@ -63,7 +63,7 @@
                         <li><strong>出帐收入</strong> <a href="javascript:void(0)">删除</a></li>
                         <li class="collAdd onSelect"><a href="javascript:void(0)" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a></li>
                     </ul>
-                    <a class="btnItem activeOne" href="javascript:void(0);" onclick="$('#dlg1').dialog('open').dialog('center')">添加</a>
+                    <a class="btnItem activeOne" id="shouCang" href="javascript:void(0);" >添加</a>
                 </div>
 
             </div>
@@ -90,10 +90,15 @@
 <script type="text/javascript">
     $(function(){
         addHammer(200);
+        myDialog('#shouCang','#dlg1')
 
-    })
 
-
+    });
+    var myDialog = function (id,openId) {
+            touch.on($(id), 'hold tap doubletap', function (ev) {
+                $(openId).dialog('open').dialog('center');
+            });
+    }
 </script>
 </body>
 </html>

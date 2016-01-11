@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic.html" afterPath="$PROJECT_DIR$/html/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_month.html" afterPath="$PROJECT_DIR$/html/basic_month.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/collection.html" afterPath="$PROJECT_DIR$/html/collection.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/layout.js" afterPath="$PROJECT_DIR$/js/layout.js" />
     </list>
     <ignored path="neimengMJF.iws" />
@@ -27,41 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="message.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/message.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.035715">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="basic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.42857">
-              <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic_month.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/basic_month.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.785715">
-              <caret line="261" column="19" selection-start-line="261" selection-start-column="19" selection-end-line="261" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="switch.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-mobile/button/switch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.857142">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.392857">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -70,8 +40,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.79310346">
-              <caret line="403" column="16" selection-start-line="403" selection-start-column="16" selection-end-line="403" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="384" column="89" selection-start-line="384" selection-start-column="89" selection-end-line="384" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -80,54 +50,41 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-44.892857">
-              <caret line="110" column="37" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="37" />
+            <state vertical-scroll-proportion="-15.75">
+              <caret line="107" column="3" selection-start-line="107" selection-start-column="3" selection-end-line="111" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51771116">
-              <caret line="128" column="56" selection-start-line="128" selection-start-column="56" selection-end-line="128" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="set.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/set.html">
+      <file leaf-file-name="collection.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/collection.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="158" column="6" selection-start-line="158" selection-start-column="6" selection-end-line="158" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toggleGrid.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/toggleGrid.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toggleLine.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/toggleLine.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.8343023">
+              <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,7 +95,6 @@
         <option value="D:/东方国信/内蒙手机经分/手机经分/psd/neimengMJF-wp02/neimengMJF/html/basic.html" />
         <option value="$PROJECT_DIR$/js/hammer.min.js" />
         <option value="$PROJECT_DIR$/html/bookmark.html" />
-        <option value="$PROJECT_DIR$/html/collection.html" />
         <option value="$PROJECT_DIR$/html/explain.html" />
         <option value="$PROJECT_DIR$/html/explain02.html" />
         <option value="$PROJECT_DIR$/html/explainSearch.html" />
@@ -152,10 +108,12 @@
         <option value="$PROJECT_DIR$/html/set.html" />
         <option value="$PROJECT_DIR$/html/toggleGrid.html" />
         <option value="$PROJECT_DIR$/html/toggleLine.html" />
-        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/basic_month.html" />
+        <option value="$PROJECT_DIR$/html/zuoxi.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/html/basic.html" />
+        <option value="$PROJECT_DIR$/js/layout.js" />
+        <option value="$PROJECT_DIR$/html/collection.html" />
       </list>
     </option>
   </component>
@@ -165,9 +123,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="width" value="1450" />
-    <option name="height" value="872" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="添加" />
@@ -194,7 +153,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="测试" />
+        <subPane subId="问题" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="默认的">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,7 +250,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,6 +259,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -351,10 +330,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="1450" height="872" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22803347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23131171" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -390,23 +369,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/hammer.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/东方国信/内蒙手机经分/手机经分/psd/neimengMJF-wp02/neimengMJF/js/hammer.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="15953" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/东方国信/内蒙手机经分/手机经分/psd/neimengMJF-wp02/neimengMJF/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -418,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="43" selection-start-line="341" selection-start-column="12" selection-end-line="343" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -435,7 +396,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -458,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="43" selection-start-line="341" selection-start-column="12" selection-end-line="343" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,7 +435,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -498,7 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="43" selection-start-line="341" selection-start-column="12" selection-end-line="343" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,7 +474,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="43" selection-start-line="341" selection-start-column="12" selection-end-line="343" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +513,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -578,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="43" selection-start-line="341" selection-start-column="12" selection-end-line="343" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="334" column="42" selection-start-line="327" selection-start-column="12" selection-end-line="334" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,19 +573,12 @@
         <state vertical-scroll-proportion="61.642857">
           <caret line="6" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/bookmark.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.75">
-          <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/collection.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.75">
           <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
@@ -668,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="87" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="6" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +652,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="261" column="19" selection-start-line="261" selection-start-column="19" selection-end-line="261" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-mobile/button/switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -716,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="158" column="6" selection-start-line="158" selection-start-column="6" selection-end-line="158" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,62 +694,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/message.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.035715">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.785715">
-          <caret line="261" column="19" selection-start-line="261" selection-start-column="19" selection-end-line="261" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-mobile/button/switch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.857142">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.79310346">
-          <caret line="403" column="16" selection-start-line="403" selection-start-column="16" selection-end-line="403" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="384" column="89" selection-start-line="384" selection-start-column="89" selection-end-line="384" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
+    <entry file="file://$PROJECT_DIR$/../demo/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-44.892857">
-          <caret line="110" column="37" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="37" />
+        <state vertical-scroll-proportion="-7.616279">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/KuaiZip/html/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3372093">
+          <caret line="280" column="7" selection-start-line="280" selection-start-column="7" selection-end-line="280" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.42857">
-          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        <state vertical-scroll-proportion="-3.392857">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.75">
+          <caret line="107" column="3" selection-start-line="107" selection-start-column="3" selection-end-line="111" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51771116">
-          <caret line="128" column="56" selection-start-line="128" selection-start-column="56" selection-end-line="128" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8343023">
+          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
           <folding />
         </state>
       </provider>
