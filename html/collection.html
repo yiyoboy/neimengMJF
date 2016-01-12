@@ -90,15 +90,19 @@
 <script type="text/javascript">
     $(function(){
         addHammer(200);
-        myDialog('#shouCang','#dlg1')
-
+        var a =new myDialog().openD('#shouCang','#dlg1');
     });
+    var myDialog =function () {}
+    myDialog.prototype = {
 
-    var myDialog = function (id,openId) {
+        openD :function(id,openId){
             touch.on($(id), 'hold tap doubletap', function (ev) {
                 $(openId).dialog('open').dialog('center');
             });
+
+        }
     }
+
 </script>
 </body>
 </html>

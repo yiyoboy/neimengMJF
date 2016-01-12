@@ -36,6 +36,9 @@ function addHammer(speed) {
 
             }
         });
+        touch.on(targetMenu, 'tap', function(ev){
+            targetMenu.hide(20);
+        });
     } else {
         var targetMenu =$("#menu");
         var mc = new Hammer(document.querySelector('body'));
@@ -60,7 +63,7 @@ function addHammer(speed) {
                 targetMenu.show(20);
             }
         });
-        targetMenu.on("tap", function (ev) {
+        mc.on("tap", function (ev) {
             targetMenu.hide(20);
         });
         mc.on("swipeleft", function (ev) {
