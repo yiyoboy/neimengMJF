@@ -63,7 +63,7 @@ function addHammer(speed) {
                 targetMenu.show(20);
             }
         });
-        mc.on("tap", function (ev) {
+        touch.on(targetMenu, 'tap', function(ev){
             targetMenu.hide(20);
         });
         mc.on("swipeleft", function (ev) {
