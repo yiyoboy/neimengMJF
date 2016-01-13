@@ -36,14 +36,14 @@ function addHammer(speed) {
 
             }
         });
-        touch.on(targetMenu, 'tap', function(ev){
+       /* touch.on(targetMenu, 'tap', function(ev){
             targetMenu.hide(20);
-        });
+        });*/
     } else {
         var targetMenu =$("#menu");
         var mc = new Hammer(document.querySelector('body'));
         //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-        mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        //mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
         //mc.get('pinch').set({ enable: true });
         //mc.get('rotate').set({ enable: true });
         function getMc(){
@@ -63,9 +63,11 @@ function addHammer(speed) {
                 targetMenu.show(20);
             }
         });
-        touch.on(targetMenu, 'tap', function(ev){
+
+       /* targetMenu.on("tap", function (ev) {
+            ev.preventDefault();
             targetMenu.hide(20);
-        });
+            });*/
         mc.on("swipeleft", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
@@ -186,7 +188,13 @@ function collToggle(className,activeName,collListName,onSelect){
 /* menu 切换效果 */
 function tabMenu(className,activeName){
     var target = $(className).find("li a");
+    var targetMenu =$("#menu");
     touch.on(target, 'hold tap doubletap', function(ev){
+        ev.preventDefault();
+        var display = targetMenu.css("display");
+        if(display=="block" ){
+            targetMenu.hide();
+        }
         $(this).addClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
     });
 }

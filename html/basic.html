@@ -387,9 +387,20 @@
         dateUse();
         addHammer(200);
         moveHand();
+        noDate();
+
 
     })
+function noDate(){
+    $(".dateHeader").addClass("noDate");
+    var pb= $(".panel-body").height();
+    $(".panel-body").height(pb+43);
 
+}
+    function addDate(){
+        $(".dateHeader").removeClass("noDate");
+
+    }
     function dateUse(){
 
         $('.datepicker').pickadate(
