@@ -27,12 +27,12 @@ function addHammer(speed) {
                 getBack();
             }
             else {
-                targetMenu.hide(20);
+                targetMenu.addClass('slideout-out').delay(400).hide(0);
             }
         });
         touch.on(hammertime, 'swiperight', function(ev){
             if( ev.distanceX > speed){
-                targetMenu.show(20);
+                targetMenu.removeClass('slideout-out').show(0);
 
             }
         });
@@ -53,14 +53,14 @@ function addHammer(speed) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if(ev.deltaX>speed&&display=="none"){
-                targetMenu.show(20);
+                targetMenu.removeClass('slideout-out').show(0);
             }
         });
         mc.on("swiperight", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if(ev.deltaX>speed&&display=="none"){
-                targetMenu.show(20);
+                targetMenu.removeClass('slideout-out').show(0);
             }
         });
 
@@ -72,7 +72,7 @@ function addHammer(speed) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if( ev.deltaX<-speed&&display=="block"){
-                targetMenu.hide(20);
+                targetMenu.addClass('slideout-out').delay(400).hide();
             }
             else if(ev.deltaX<-speed){
                 getBack();
@@ -193,7 +193,7 @@ function tabMenu(className,activeName){
         ev.preventDefault();
         var display = targetMenu.css("display");
         if(display=="block" ){
-            targetMenu.hide();
+            targetMenu.addClass('slideout-out').delay(400).hide();
         }
         $(this).addClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
     });

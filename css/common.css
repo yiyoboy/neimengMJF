@@ -124,6 +124,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_100{width:100px !important;}
 .w_80{width:80px !important;}
 .w_50{width:50px !important;}
+/* chrome 表单cookie机制处理 */
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
 
 #main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;/* 右侧第一项的正负值阴影修改 */  /* For Firefox3.6+ */border: none;
     -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
@@ -158,9 +160,13 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .menu-section-list a.menu06{background-image: url("../images/common/ico06_menu.png");}
 
 .menu,
-.slideout-menu{position: fixed; left: 0;/* 右侧 */top: 0;bottom: 0;right: 0;z-index: 999999;/border: none;
+.slideout-menu{position: fixed; left: 0px;/* 右侧 */top: 0;bottom: 0;right: 0;z-index: 999999;/border: none;
     -webkit-box-shadow:10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
-    box-shadow:10px 0px 20px #c2bebd;width: 256px;overflow-y:hidden;-webkit-overflow-scrolling: touch;display: none;}
+    box-shadow:10px 0px 20px #c2bebd;width: 256px;overflow-y:hidden;-webkit-overflow-scrolling: touch;display: none; animation: Mfade-in;/*动画名称*/  animation-duration: 0.2s;/*动画持续时间*/  -webkit-animation:Mfade-in 0.2s;}
+@-webkit-keyframes Mfade-in{  0% { left: -260px;  opacity: 0.5;} 100% { left: 0px;  opacity: 1;} }
+@-webkit-keyframes Mfade-out{  0% { left: 0px;  opacity: 1;} 100% { left:-300px;  opacity: 1;} }
+.slideout-out{ animation: Mfade-out;/*动画名称*/  animation-duration: 0.5s;/*动画持续时间*/  -webkit-animation:Mfade-out 0.5s;}
+
 .slideout-panel{position: relative;z-index: 1;}
 .slideout-open,
 .slideout-open body{overflow: hidden;}
