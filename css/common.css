@@ -510,8 +510,8 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 */
 
 /* 子页通用 标题 */
-.titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
-.titArea h3 {font-size: 18px; line-height:50px; padding-left: 36px; background-size: 16px 16px; background-position: 16px 50%; background-repeat: no-repeat;}
+.titArea { min-height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
+.titArea h3 {font-size: 18px; padding:5px 0 5px 36px; line-height:1.5; background-size: 16px 16px; background-position: 16px 10px; background-repeat: no-repeat;}
 .titAreaOne { border-bottom:2px solid #f7941d;}
 
 /* 添加右侧切换图标 */
@@ -593,6 +593,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 /*  设置 - 修改密码 */
 .setCon .listGroup ul li a.active { background-color:#fff; border-left:4px solid #fff; text-decoration: none; color:#f7941d;
     padding-left:0 ; padding-right: 0; }
+.setCon .rightText { position: absolute; right:16px; line-height: 24px; top: 10px; text-align: center; min-width: 58px; border: 1px solid #ddd;}
 .setCon .m-right { right:16px;}
 .setCon .m-right .switchbutton-on {background-color:#f7941d; color: #fff;}
 .setCon .switchbutton-off {background-color:#fcfcfc; color: #9b9b9b;}
