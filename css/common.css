@@ -126,6 +126,8 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_50{width:50px !important;}
 /* chrome 表单cookie机制处理 */
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
+/* windowMask*/
+.windowMask{  display: none;   opacity: 0.6; background-color: #060606; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 991;}
 
 #main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;/* 右侧第一项的正负值阴影修改 */  /* For Firefox3.6+ */border: none;
     -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
@@ -133,6 +135,7 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
 
 .panel-body{ background-color: #ffffff; overflow-x:hidden}
 /** * Slideout module styles  */
+
 .menu{ border:0; background-image: url("../images/common/logo.png"); background-size: 50% auto; background-position: center 92%; background-repeat: no-repeat; background-color:#eaeaea;}
 .menu .topInfo{ height: 200px; position: relative; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: left center; background-size: 100% 100%;}
 .menu .topInfo .photo{ padding-top:15%; }
@@ -543,6 +546,7 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 .listGroup dl dd select {outline:none; width:100%; color: #666;}
 .listGroup ul {}
 .listGroup ul li { line-height:1; overflow:hidden; font-size: 14px;  border-bottom: 1px solid #e5e5e5;position: relative; padding:16px 0 16px 34px; border-left:4px solid transparent; background-image: url("../images/common/ico03_coll.png");background-position: 12px 15px; background-repeat: no-repeat; background-size: 16px 16px; }
+.listGroup ul li a{color:#97979a;}
 .listGroup ul li h4 a { display: block;color:#97979a;  }
 .listGroup ul li h4 a:hover { text-decoration: none;}
 .listGroup ul li h4 a.active { background-color:#f5f5f5; border-left:4px solid #f7941d; text-decoration: none; color:#f7941d; }

@@ -20,6 +20,7 @@ function addHammer(speed) {
     if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
         var hammertime =$("body");
         var targetMenu =$("#menu");
+        var windowMask =$(".windowMask");
         //Swipe
         touch.on(hammertime, 'swipeleft', function(ev){
             var display = $("#menu").css("display");
@@ -27,20 +28,28 @@ function addHammer(speed) {
                 getBack();
             }
             else {
+
                 targetMenu.addClass('slideout-out').delay(400).hide(0);
+                windowMask.hide();
             }
+        });
+        touch.on(targetMenu, 'tap', function(ev){
+            targetMenu.addClass('slideout-out').delay(400).hide(0);
+            windowMask.hide();
         });
         touch.on(hammertime, 'swiperight', function(ev){
             if( ev.distanceX > speed){
+                windowMask.show();
                 targetMenu.removeClass('slideout-out').show(0);
-
             }
         });
-       /* touch.on(targetMenu, 'tap', function(ev){
-            targetMenu.hide(20);
-        });*/
+       touch.on(windowMask, 'tap', function(ev){
+           targetMenu.addClass('slideout-out').delay(400).hide(0);
+           windowMask.hide();
+        });
     } else {
         var targetMenu =$("#menu");
+        var windowMask =$(".windowMask");
         var mc = new Hammer(document.querySelector('body'));
         //mc.get('pan').set({ direction: Hammer.DIRECTION_ALL });
         //mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
@@ -53,6 +62,7 @@ function addHammer(speed) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if(ev.deltaX>speed&&display=="none"){
+                windowMask.show();
                 targetMenu.removeClass('slideout-out').show(0);
             }
         });
@@ -60,19 +70,25 @@ function addHammer(speed) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if(ev.deltaX>speed&&display=="none"){
+                windowMask.show();
                 targetMenu.removeClass('slideout-out').show(0);
             }
         });
-
-       /* targetMenu.on("tap", function (ev) {
-            ev.preventDefault();
-            targetMenu.hide(20);
-            });*/
+        touch.on(targetMenu, 'tap', function(ev){
+            targetMenu.addClass('slideout-out').delay(400).hide(0);
+            windowMask.hide();
+        });
+        touch.on(windowMask, 'tap', function(ev){
+            targetMenu.addClass('slideout-out').delay(400).hide(0);
+            windowMask.hide();
+        });
         mc.on("swipeleft", function (ev) {
             ev.preventDefault();
             var display = $("#menu").css("display");
             if( ev.deltaX<-speed&&display=="block"){
+
                 targetMenu.addClass('slideout-out').delay(400).hide();
+                windowMask.hide();
             }
             else if(ev.deltaX<-speed){
                 getBack();
@@ -189,11 +205,14 @@ function collToggle(className,activeName,collListName,onSelect){
 function tabMenu(className,activeName){
     var target = $(className).find("li a");
     var targetMenu =$("#menu");
+    var windowMask =$(".windowMask");
     touch.on(target, 'hold tap doubletap', function(ev){
         ev.preventDefault();
         var display = targetMenu.css("display");
         if(display=="block" ){
+
             targetMenu.addClass('slideout-out').delay(400).hide();
+            windowMask.hide();
         }
         $(this).addClass(activeName).parents("li").siblings("li").find("a").removeClass(activeName);
     });
