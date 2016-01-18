@@ -229,13 +229,15 @@ p.topTab02 a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; fo
 .icon_chart.active{background-image: url('../images/common/large_chart_on.png'); }*/
 
 /* swiper 图标菜单*/
-.topNavGuide{border: 1px solid #e3e3e3;}
+.topNavGuide{border: 1px solid #e3e3e3; position: relative;}
 .swiper-container { position: relative; z-index: 1; overflow: hidden; width: 100%; }
 .swiper-wrapper { position: relative;  width: 100%; height: 100%;  z-index: 1;display: -webkit-box; display: -moz-box; display: flex;  box-sizing: content-box;}
 .swiper-slide {  position: relative;  width: 100%;  -webkit-flex-shrink: 0;  flex-shrink: 0;  height: 100%; display: -webkit-box; display: -webkit-flex;display: flex;}
+.swiper_add{ z-index: 9; position: absolute; top: 175px; right: 3px; width: 24px; height: 24px;}
+.swiper_add a{ display: block; overflow: hidden; width: 24px; height: 24px; text-indent: -5000px; background: url("../images/common/swipeIco_def.png") center center no-repeat; background-size: 24px 24px;}
 .topNavGuide .swiper-container{height: 200px;/* 皮肤 */ background-color: #f89b2b; background-image: url("../images/common/bg_info.png"); background-repeat: no-repeat; background-position: left center; background-size: 100% 100%;}
 .topNav{ width: 100%;}
-.topNav li { float: left; width: 33.33%; padding-top:10px; height: 84px; color: #fff;}
+.topNav li { float: left; width: 33.3%; padding-top:8px; height: 80px; color: #fff;}
 .topNav li a { text-indent: -5000px; background-position:  center center; background-repeat: no-repeat; background-size: 40px 40px; width: 50px; height: 50px;  margin: 0 auto 5px; display: block; border:2px solid #eaeaea; border-radius:50%; -webkit-border-radius:50%;}
 .topNav li a.active {/* 皮肤 */box-shadow:0 0 5px 5px #d3811f;/* 皮肤 */ background-color: #d3811f;/* 皮肤 */  }
 .topNav li span{ text-align: center; display: block;}
@@ -405,7 +407,7 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 .tableBox table thead th.imText{color: #f7941d;}
 .tableBox table th{ background-color: #fefefe; border-bottom: 1px solid #d9d9d9; padding: 10px 2px; font-weight: normal; line-height: 1.5em; }
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
-.tableBox table td.inLink a{display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
+.tableBox table td.inLink a{ text-align: left; padding-left: 4px; display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
 .tableBox table td.inLink02 a{background-image: url("../images/common/ico03_table.png"); }
 
@@ -421,6 +423,11 @@ input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 1
 @-webkit-keyframes fade-in{  0% { left: 0px; top: 0px; opacity: 0;} 100% { left: -20px; top: -50px; opacity: 1;} }
 @-webkit-keyframes fade-in02{  0% { left: 0px; top: 0px; opacity: 0;}  100% { left: -50px; top: -10px; opacity: 1;} }
 
+/* 我的提问悬浮图标 */
+.handTabAsk{border-radius:50%; border: 2px solid #fff; line-height: 20px; z-index: 101;  text-align: center; color: #ffffff;background: #f7941d;  position: absolute;  width: 50px; height:50px;  bottom: 70px; right:30px; opacity: 0.5; cursor: pointer;}
+.handTabAsk.hover{ opacity: 1;}
+.handTabAsk.tap{ opacity: 1;}
+.handTabAsk a{ display: block; color: #fff; padding-top: 5px; text-decoration: none;}
 
 /* login */
 body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}

@@ -164,8 +164,8 @@ function tabFooter(className,activeName){
         touch.on(target, 'hold tap doubletap', function(ev){
             $(this).parents("li").addClass(activeName).siblings("li").removeClass(activeName);
         });
-
 }
+
 
 /* list 切换列表 */
 function toggleLinks(className,activeName){

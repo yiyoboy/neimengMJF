@@ -19,6 +19,7 @@
 </head>
 <body>
 <!--左侧滑动菜单-->
+<div class="windowMask"></div>
 <nav id="menu" class="menu">
     <!--个人信息显示-->
     <div class="topInfo">
@@ -66,10 +67,15 @@
                             <li><a href="javascript:void(0)" class="icon10">图标1</a><span>专项活动</span></li>
                         </ul>
                     </div>
+
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
+
             </div>
+            <!-- Add 收藏图标 -->
+            <div class="swiper_add"><a href="javascript:void(0)">我的收藏</a></div>
+            <!-- //Add 收藏图标 -->
             <!-- //Swiper -->
             <!--指标标题-->
             <h3><strong>近七日重点指标趋势</strong><span class="arrow-down"><span class="arrow-down"></span></span></h3>
@@ -103,7 +109,6 @@
 
     $(function(){
         addHammer(200);
-
     })
     /* 滚动菜单 */
     var swiper = new Swiper('.swiper-container', {
