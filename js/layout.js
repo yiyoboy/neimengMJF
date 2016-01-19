@@ -104,8 +104,8 @@ function moveHand(){
     var $moveLink =$("#handMove a");
     var moveText= $moveH.find("span");
     var targetMove=new Hammer(document.querySelector('#handMove'));
-    targetMove.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-    targetMove.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+    targetMove.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    targetMove.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
     var dx,dy;
     targetMove.on("pan", function (ev) {
@@ -123,11 +123,18 @@ function moveHand(){
         var offx = dx + ev.deltaX + "px";
         var offy = dy + ev.deltaY + "px";
         $moveH.addClass("hover");
-        $moveH.css({
-            'transform': 'translate(' + offx + ',' + offy + ')',
-        });
+        var nL = $moveH.offset().left;
+        var nT = $moveH.offset().top;
+        var nR = $(window).width() -nL;
+        var nB = $(window).height() -nT;
+        console.log(nT+"==="+nR+"===="+nB+"====="+nL)
 
-    });
+        if(parseInt(offx)>-240&&parseInt(offx)<30&&parseInt(offy)>-360&&parseInt(offy)<10){
+            $moveH.css({
+                'transform': 'translate(' + offx + ',' + offy + ')'
+            });
+        }
+    })
     targetMove.on("panend", function (ev) {
         ev.preventDefault();
         dx += ev.deltaX;
