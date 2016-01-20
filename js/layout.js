@@ -124,6 +124,7 @@ function moveHand(){
     });
     targetMove.on("panmove", function (ev) {
         ev.preventDefault();
+        $moveH.addClass("hover");
         $moveH.css({
             'left':nX*1+ev.deltaX*1+'px' ,
             'top':nY*1+ev.deltaY*1+'px'
@@ -146,7 +147,7 @@ function moveHand(){
         $moveH.removeClass("hover");
 
     });
-    targetMove.on("swipe", function(ev) {
+    targetMove.on("swipeleft swiperight", function(ev) {
         ev.preventDefault();
         ev.srcEvent.stopPropagation();
         //console.log(ev);

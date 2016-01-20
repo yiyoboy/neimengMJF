@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d30972-fb23-4fb9-a955-b38b29fb3f6d" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neimengMJF.zip" afterPath="$PROJECT_DIR$/neimengMJF.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/layout.js" afterPath="$PROJECT_DIR$/js/layout.js" />
     </list>
     <ignored path="neimengMJF.iws" />
@@ -29,28 +27,28 @@
       <file leaf-file-name="basic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.892858">
-              <caret line="403" column="5" selection-start-line="403" selection-start-column="5" selection-end-line="403" selection-end-column="5" />
+            <state vertical-scroll-proportion="-8.928572">
+              <caret line="370" column="91" selection-start-line="370" selection-start-column="3" selection-end-line="370" selection-end-column="91" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/layout.js">
+      <file leaf-file-name="basic_month.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/basic_month.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="28" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="28" />
+            <state vertical-scroll-proportion="-15.357142">
+              <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="layout.js" pinned="false" current-in-tab="true">
-        <entry file="file://D:/Documents/Tencent Files/18158626/FileRecv/MobileFile/layout.js">
+        <entry file="file://$PROJECT_DIR$/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3986014">
-              <caret line="192" column="7" selection-start-line="99" selection-start-column="0" selection-end-line="197" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.6811189">
+              <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -149,13 +147,13 @@
         <option value="$PROJECT_DIR$/html/message.html" />
         <option value="$PROJECT_DIR$/html/noticeInformation.html" />
         <option value="$PROJECT_DIR$/html/set.html" />
-        <option value="$PROJECT_DIR$/html/basic.html" />
         <option value="$PROJECT_DIR$/html/findPassword.html" />
         <option value="$PROJECT_DIR$/html/messageAsk.html" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/basic111.html" />
-        <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/js/layout.js" />
+        <option value="$PROJECT_DIR$/html/basic.html" />
       </list>
     </option>
   </component>
@@ -372,7 +370,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22919606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -642,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="254" column="15" selection-start-line="254" selection-start-column="15" selection-end-line="254" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/东方国信/插件研究/css3侧边栏/4种CSS3超酷移动手机滑动隐藏侧边栏菜单特效/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="51.57143">
@@ -745,22 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858">
-          <caret line="403" column="5" selection-start-line="403" selection-start-column="5" selection-end-line="403" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="28" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.034483">
@@ -771,8 +746,32 @@
     </entry>
     <entry file="file://D:/Documents/Tencent Files/18158626/FileRecv/MobileFile/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3986014">
-          <caret line="192" column="7" selection-start-line="99" selection-start-column="0" selection-end-line="197" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.31888112">
+          <caret line="132" column="33" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.928572">
+          <caret line="370" column="91" selection-start-line="370" selection-start-column="3" selection-end-line="370" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.357142">
+          <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6811189">
+          <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
           <folding />
         </state>
       </provider>
