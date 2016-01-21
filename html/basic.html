@@ -52,7 +52,7 @@
         <!--头部tab 菜单-->
         <header class="dateHeader">
             <p class="topTab02">
-				<a href="javascript:void(0)"  class="active">盟市</a> <a href="javascript:void(0)">考核</a>
+				<span><a href="javascript:void(0)"  class="active">盟市</a> <a href="javascript:void(0)">考核</a></span>
 			</p>
             <!--日历控件-->
             <div class="dateGuide">
@@ -389,13 +389,11 @@
         addHammer(200);
         moveHand();
         noDate();
-
-
     })
 function noDate(){
     $(".dateHeader").addClass("noDate");
     var pb= $(".panel-body").height();
-    $(".panel-body").height(pb+43);
+    $(".panel-body").height(pb+33);
 
 }
     function addDate(){
@@ -416,9 +414,6 @@ function noDate(){
                 }
         );
     }
-
-
-
 </script>
 </body>
 </html>
