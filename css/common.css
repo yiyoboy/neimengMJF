@@ -278,6 +278,8 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; box-shado
 /* 日历样式 */
 input.datepicker,
 input.datepicker02{ border:none; line-height: 40px; text-align: center; width: 100%; font-size: 14px;color:#606060!important;}
+input.datepicker:disabled,
+input.datepicker02:disabled{ background-color: #fff;color:#606060!important; }
 .dateHeader{ height:120px;border-bottom: 1px solid #e5e5e5;overflow: hidden;position: relative;z-index:100;}
 /* 没有日历高度 */
 .dateHeader.noDate .dateGuide{display:none;}

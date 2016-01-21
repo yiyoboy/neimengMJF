@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d30972-fb23-4fb9-a955-b38b29fb3f6d" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/basic_date.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico02_table.png" afterPath="$PROJECT_DIR$/images/common/ico02_table.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/ico_table.png" afterPath="$PROJECT_DIR$/images/common/ico_table.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/toggle_ico01.png" afterPath="$PROJECT_DIR$/images/common/toggle_ico01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/toggle_ico02.png" afterPath="$PROJECT_DIR$/images/common/toggle_ico02.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic.html" afterPath="$PROJECT_DIR$/html/basic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_date.html" afterPath="$PROJECT_DIR$/html/basic_date.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic_month.html" afterPath="$PROJECT_DIR$/html/basic_month.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/layout.js" afterPath="$PROJECT_DIR$/js/layout.js" />
     </list>
     <ignored path="neimengMJF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +39,8 @@
       <file leaf-file-name="basic_month.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic_month.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="58" column="174" selection-start-line="58" selection-start-column="174" selection-end-line="58" selection-end-column="174" />
+            <state vertical-scroll-proportion="-10.857142">
+              <caret line="61" column="99" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -55,8 +49,8 @@
       <file leaf-file-name="basic_date.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic_date.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.714286">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state vertical-scroll-proportion="-12.857142">
+              <caret line="60" column="103" selection-start-line="60" selection-start-column="103" selection-end-line="60" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -65,8 +59,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2518195">
-              <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.55604076">
+              <caret line="284" column="44" selection-start-line="284" selection-start-column="44" selection-end-line="284" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -118,10 +112,10 @@
         <option value="$PROJECT_DIR$/html/messageAsk.html" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/basic111.html" />
-        <option value="$PROJECT_DIR$/html/basic_date.html" />
         <option value="$PROJECT_DIR$/html/basic.html" />
-        <option value="$PROJECT_DIR$/html/basic_month.html" />
         <option value="$PROJECT_DIR$/js/layout.js" />
+        <option value="$PROJECT_DIR$/html/basic_month.html" />
+        <option value="$PROJECT_DIR$/html/basic_date.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
       </list>
     </option>
@@ -705,22 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="58" column="174" selection-start-line="58" selection-start-column="174" selection-end-line="58" selection-end-column="174" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic_date.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.714286">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.966666">
@@ -737,10 +715,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.857142">
+          <caret line="61" column="99" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/basic_date.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.857142">
+          <caret line="60" column="103" selection-start-line="60" selection-start-column="103" selection-end-line="60" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2518195">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.55604076">
+          <caret line="284" column="44" selection-start-line="284" selection-start-column="44" selection-end-line="284" selection-end-column="44" />
           <folding />
         </state>
       </provider>
