@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d30972-fb23-4fb9-a955-b38b29fb3f6d" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/copy.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/basic.html" afterPath="$PROJECT_DIR$/html/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/layout.js" afterPath="$PROJECT_DIR$/js/layout.js" />
     </list>
     <ignored path="neimengMJF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +27,7 @@
       <file leaf-file-name="basic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-4.857143">
               <caret line="395" column="33" selection-start-line="395" selection-start-column="33" selection-end-line="395" selection-end-column="33" />
               <folding />
             </state>
@@ -40,8 +37,8 @@
       <file leaf-file-name="basic_month.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/basic_month.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="99" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="99" />
+            <state vertical-scroll-proportion="-8.821428">
+              <caret line="61" column="98" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -57,30 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="283" column="29" selection-start-line="283" selection-start-column="29" selection-end-line="283" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.5936073">
+              <caret line="352" column="23" selection-start-line="352" selection-start-column="23" selection-end-line="352" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="copy.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/copy.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42937064">
+            <state vertical-scroll-proportion="0.0">
               <caret line="254" column="41" selection-start-line="254" selection-start-column="41" selection-end-line="254" selection-end-column="41" />
               <folding />
             </state>
@@ -128,8 +115,8 @@
         <option value="$PROJECT_DIR$/html/basic_date.html" />
         <option value="$PROJECT_DIR$/js/layout.js" />
         <option value="$PROJECT_DIR$/html/basic.html" />
-        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/copy.css" />
+        <option value="$PROJECT_DIR$/css/common.css" />
       </list>
     </option>
   </component>
@@ -684,6 +671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="153" column="6" selection-start-line="153" selection-start-column="6" selection-end-line="153" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,34 +689,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/basic.html">
+    <entry file="file://$PROJECT_DIR$/js/layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="395" column="33" selection-start-line="395" selection-start-column="33" selection-end-line="395" selection-end-column="33" />
+          <caret line="254" column="41" selection-start-line="254" selection-start-column="41" selection-end-line="254" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/basic_month.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="99" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="283" column="29" selection-start-line="283" selection-start-column="29" selection-end-line="283" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/copy.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
+        <state vertical-scroll-proportion="-8.821428">
+          <caret line="61" column="98" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="98" />
           <folding />
         </state>
       </provider>
@@ -741,10 +713,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/layout.js">
+    <entry file="file://$PROJECT_DIR$/html/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42937064">
-          <caret line="254" column="41" selection-start-line="254" selection-start-column="41" selection-end-line="254" selection-end-column="41" />
+        <state vertical-scroll-proportion="-4.857143">
+          <caret line="395" column="33" selection-start-line="395" selection-start-column="33" selection-end-line="395" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5936073">
+          <caret line="352" column="23" selection-start-line="352" selection-start-column="23" selection-end-line="352" selection-end-column="23" />
           <folding />
         </state>
       </provider>

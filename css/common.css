@@ -203,9 +203,9 @@ input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
 .topTab li a{position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 34px; line-height: 34px;border: 1px solid #f7941d;  background: #ffffff; text-decoration: none;}
 .topTab li a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;}
 
-p.topTab02{ background: #fdfdfd; border: none; border-bottom: 2px solid #e2e5e6; text-align: center; padding-top: 5px; height: 31px;}
-p.topTab02 span{ display: inline-block; margin: 0 auto; overflow: hidden;border-radius: 5px;border: 1px solid #f7941d;}
-p.topTab02 a{ position: relative; color: #000000; font-size:14px; margin: 0 -3px; display:inline-block; padding: 0 15px;   height: 24px; line-height: 24px;  background: #ffffff; text-decoration: none;}
+p.topTab02{ background: #fdfdfd; border: none; border-bottom: 2px solid #e2e5e6; text-align: center; padding-top: 3px; height: 33px;}
+p.topTab02 span{ display: inline-block;height:24px; margin: 0 auto; overflow: hidden;border-radius: 5px;border: 1px solid #f7941d;}
+p.topTab02 a{ overflow:hidden;position: relative; color: #000000; font-size:14px; margin: 0 0; display:inline-block; padding: 0 5px; min-width: 80px;   height: 24px; line-height: 24px;  background: #ffffff; text-decoration: none;}
 p.topTab02 a.active{ /* 皮肤 */  background-color: #f7941d; color: #ffffff; font-weight: bold;}
 /* 底部图标 */
 
@@ -277,13 +277,12 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; box-shado
 
 /* 日历样式 */
 input.datepicker,
+input.datepicker02{ border:none; line-height: 32px; text-align: center; width: 100%; font-size: 14px;color:#999; background-color: #fff;}
+input.datepicker{color:#666!important;}
 input.datepicker02,
-input.datepicker:disabled,
-input.datepicker02:disabled,
-input.datepicker[disabled],
-input.datepicker02[disabled],
-input.datepicker.disabled,
-input.datepicker02.disabled{ border:none; line-height: 32px; text-align: center; width: 100%; font-size: 14px;color:#606060!important; background-color: #fff;}
+input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; /* Override iOS / Android font color change */
+    -webkit-opacity:1; /* Override iOS opacity change affecting text & background color */}
+
 .dateHeader{ height:114px;border-bottom: 1px solid #e5e5e5;overflow: hidden;position: relative;z-index:100;}
 /* 没有日历高度 */
 .dateHeader.noDate .dateGuide{display:none;}
@@ -337,7 +336,7 @@ input.datepicker02.disabled{ border:none; line-height: 32px; text-align: center;
 .picker__table{text-align: center; border-collapse: collapse; border-spacing: 0; table-layout: fixed; font-size: inherit; width: 100%;}
 .picker__table td{margin: 0; padding: 2px 0;}
 /** * The weekday labels */
-.picker__weekday{width: 14.285714286%; font-size: 1em; padding-bottom: .25em; color: #999999; font-weight: 500; background: #fdfdfd; border-bottom: 1px solid #e5e5e5; padding: 5px 0; /* Increase the spacing a tad */}
+.picker__weekday{width: 14.285714286%; font-size:12px; height: 19px; color: #999999; font-weight: 500; background: #fdfdfd; border-bottom: 1px solid #e5e5e5; padding: 5px 0; /* Increase the spacing a tad */}
 /** * The days on the calendar */
 .picker__day{padding: .25em 0; font-weight: 200; font-size: 11px;}
 .picker__day--today{width: 22px; margin: 0 auto; border-radius: 50%; background-color: #bfbec3; color:#ffffff; position: relative;;}
@@ -392,7 +391,7 @@ input.datepicker02.disabled{ border:none; line-height: 32px; text-align: center;
 /* 指标内容 */
 .tableGuide{ background-color: #e7e7e7;}
 .tableTitle { z-index: 3; position:absolute;bottom: 0; width: 100%; left: 0; background-color: #ffffff;}
-.tableTitle h3{ font-size: 14px; background-color:#fef4e8;  border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #f7941d; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
+.tableTitle h3{ font-size: 16px; background-color:#fef4e8;  border-bottom: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; height: 40px; line-height: 40px; color: #f7941d; padding-left: 30px; background-image: url("../images/common/title_line.png"); background-size:24px 24px;  background-repeat: no-repeat; background-position: 4px center;  }
 .tableTitle h3.tableIco01{ background-image:url("../images/common/large_shapes_on.png");}
 .tableTitle h3.tableIco02{background-image:url("../images/common/large_chart_on.png");}
 .tableTitle h3.tableIco03{background-image:url("../images/common/large_clipart_on.png");}
