@@ -402,7 +402,7 @@ input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; 
 .tableTitle a.bookIco.gray{background-image: url("../images/common/ico03_bookG.png");}
 /* 指标表格 */
 .tableBox{ position: relative; margin-bottom: 5px;}
-.tableBox a.toggleBTable{ position: absolute; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
+.tableBox a.toggleBTable{ position: absolute; z-index:2; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .tableBox a.toggleBTable.active{background-image: url("../images/common/toggle_ico01.png");}
 .tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;}
 .tableBox table thead th.imText{color: #f7941d; font-weight: bold;}
@@ -411,6 +411,11 @@ input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; 
 .tableBox table td.inLink a{ text-align: left; padding-left: 4px; display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
 .tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
 .tableBox table td.inLink02 a{background-image: url("../images/common/ico03_table.png"); }
+
+/*#sollTable{ overflow: auto;  margin-bottom:0;}*/
+.scrollerOut{position: absolute; top: 0; bottom: 0; left: 0; right:0; background: #ccc; overflow: hidden;}
+#scroller{position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none;}
+
 
 /*悬浮切换按钮*/
 .handTab{border-radius:50%; line-height: 20px; z-index: 101;  text-align: center; color: #ffffff;background: #f7941d;  position: absolute;  width: 50px; height:50px;opacity: 0.5; cursor: pointer; }
