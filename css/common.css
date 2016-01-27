@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/* 苹果禁止复制，只对报表*/
+.panel{
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}
 html,body{width: 100%;height: 100%; margin:0; padding:0; font-family:tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif !important;}
 code{ display:block;}
 
@@ -124,6 +133,9 @@ a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{posit
 .w_100{width:100px !important;}
 .w_80{width:80px !important;}
 .w_50{width:50px !important;}
+#main{height:100%; background-color: #eaeaea; -moz-box-shadow:-10px 0px 20px #c2bebd;/* 右侧第一项的正负值阴影修改 */  /* For Firefox3.6+ */border: none;
+    -webkit-box-shadow:-10px 0px 20px #c2bebd;           /* For Chrome5+, Safari5+ */
+    box-shadow:-10px 0px 20px #c2bebd;                   /* For Latest Opera */   }
 /* chrome 表单cookie机制处理 */
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
 /* windowMask*/
@@ -286,7 +298,7 @@ input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; 
 .dateHeader{ height:114px;border-bottom: 1px solid #e5e5e5;overflow: hidden;position: relative;z-index:100;}
 /* 没有日历高度 */
 .dateHeader.noDate .dateGuide{display:none;}
-.dateHeader.noDate{ height:77px;}
+.dateHeader.noDate{ height:77px!important;}
 .dateGuide{ position: relative; }
 .dateGuide a.toggleBtn{ position: absolute; top: 2px; right: 5px; z-index: 99; width: 30px; height: 30px; text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .dateGuide a.toggleBtn.open{background-image: url("../images/common/toggle_ico01.png");}
@@ -336,28 +348,26 @@ input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; 
 .picker__table{text-align: center; border-collapse: collapse; border-spacing: 0; table-layout: fixed; font-size: inherit; width: 100%;}
 .picker__table td{margin: 0; padding: 2px 0;}
 /** * The weekday labels */
-.picker__weekday{width: 14.285714286%; font-size:12px; height: 19px; color: #999999; font-weight: 500; background: #fdfdfd; border-bottom: 1px solid #e5e5e5; padding: 5px 0; /* Increase the spacing a tad */}
+.picker__weekday{width: 14.285714286%; font-size:14px; height: 19px; color: #999999; font-weight: 500; background: #fdfdfd; border-bottom: 1px solid #e5e5e5; padding: 5px 0; /* Increase the spacing a tad */}
 /** * The days on the calendar */
-.picker__day{padding: .25em 0; font-weight: 200; font-size: 11px;}
-.picker__day--today{width: 22px; margin: 0 auto; border-radius: 50%; background-color: #bfbec3; color:#ffffff; position: relative;;}
+.picker__day{ font-weight: 200; font-size: 12px; height:20px; line-height:20px;}
+.picker__day--today{width: 20px; margin: 0 auto; border-radius: 50%; background-color: #bfbec3; color:#ffffff; position: relative;;}
 .picker__day--today:before{content: ""; position: absolute; top:-2px; right:-2px; width: 0; height: 0; border-radius: 50%; border: 0.2em solid #f7941d;}
 .picker__day--selected,
-.picker__day--selected:hover{width: 22px; margin: 0 auto; border-radius: 50%; background-color: #f7941d; color:#ffffff;}
+.picker__day--selected:hover{width: 20px; margin: 0 auto; border-radius: 50%; background-color: #f7941d; color:#ffffff;}
 .picker__day--highlighted{}
 .picker__day--disabled:before{}
 .picker__day--outfocus{color: #dddddd;}
 .picker__day--infocus:hover,
 .picker__day--outfocus:hover{cursor: pointer; color: #000000; background: #b1dcfb;}
 .picker__day--highlighted:hover,
-.picker--focused .picker__day--highlighted{background: #f7941d; width:22px; margin: 0 auto; color: #ffffff; border-radius: 50%;}
+.picker--focused .picker__day--highlighted{background: #f7941d; width:20px; margin: 0 auto; color: #ffffff; border-radius: 50%;}
 .picker__day--disabled,
 .picker__day--disabled:hover{background: #f5f5f5; border-color: #f5f5f5; color: #dddddd; cursor: default;}
 .picker__day--highlighted.picker__day--disabled,
 .picker__day--highlighted.picker__day--disabled:hover{background: #bbbbbb;}
 /** * The footer containing the "today" and "clear" buttons. */
 .picker__footer{text-align: center; display: none;}
-
-
 /* 月份日历 */
 #MonthSel{ position: absolute; top: 34px;left: 0; width: 100%;color: #999999; border-top:1px solid #e5e5e5;}
 #MonthSel .clear{clear: both;}
@@ -404,13 +414,14 @@ input.datepicker02:disabled{color:#000!important; -webkit-text-fill-color:#666; 
 .tableBox{ position: relative; margin-bottom: 5px;}
 .tableBox a.toggleBTable{ position: absolute; z-index:2; top: 4px; right:5px; width: 30px; height: 30px;  text-indent: -5000px; background: url("../images/common/toggle_ico02.png") center center no-repeat; background-size: 30px 30px;}
 .tableBox a.toggleBTable.active{background-image: url("../images/common/toggle_ico01.png");}
-.tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;}
+.tableBox table{ text-align: center; border-bottom: 1px solid #d9d9d9; color: #606060;font-size:14px;}
 .tableBox table thead th.imText{color: #f7941d; font-weight: bold;}
-.tableBox table th{ background-color: #f5f5f5; border-bottom: 1px solid #d9d9d9; padding: 8px 2px; font-weight: normal; line-height: 1.2em;   }
+.tableBox table th{ background-color: #f5f5f5; border-bottom: 1px solid #d9d9d9; padding: 6px 2px; font-weight: normal; line-height: 1.2em;   }
 .tableBox table td{line-height: 1.5em; border-bottom:1px solid #d9d9d9;padding: 5px 2px; background-color: #fff;}
-.tableBox table td.inLink a{ text-align: left; padding-left: 4px; display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
-.tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png"); }
-.tableBox table td.inLink02 a{background-image: url("../images/common/ico03_table.png"); }
+.tableBox table td a{color: #606060;display: block; text-align: left; padding-left: 4px; background-repeat:no-repeat;background-position: right center; background-size: 16px 16px;}
+.tableBox table td.inLink a{ text-align: left; padding-left: 10px; display: block; color: #606060; padding-right: 20px; background-image: url("../images/common/ico_table.png"); background-repeat: no-repeat; background-position: right center; background-size: 16px 16px;}
+.tableBox table td.inLink.greenLink a{background-image: url("../images/common/ico02_table.png");}
+.tableBox table td.inLink02 a{text-align: left; padding-left: 10px;background-image: url("../images/common/ico03_table.png"); }
 
 /*#sollTable{ overflow: auto;  margin-bottom:0;}*/
 .scrollerOut{position: absolute; top: 0; bottom: 0; left: 0; right:0; background: #ccc; overflow: hidden;}
@@ -524,10 +535,9 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 */
 
 /* 子页通用 标题 */
-.titArea { min-height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
-.titArea h3 {font-size: 18px; padding:10px 0 5px 36px; line-height:1.5; background-size: 16px 16px; background-position: 16px 15px; background-repeat: no-repeat;}
+.titArea { height:50px; border-bottom:1px solid #fafafa;  background-color: #fdfdfd;}
+.titArea h3 {font-size: 18px; line-height:50px; padding-left: 36px; background-size: 16px 16px; background-position: 16px 50%; background-repeat: no-repeat;}
 .titAreaOne { border-bottom:2px solid #f7941d;}
-
 /* 添加右侧切换图标 */
 .titArea ul{position: absolute; height: 35px; top: 7px; right: 7px;}
 .titArea ul li{ float: left; width: 35px; margin-left: 5px;}
@@ -628,5 +638,5 @@ body.login_bg .panel-body{ background-color: #f7941d;/* 皮肤 */}
 }
 /*添加水印*/
 .watermarkDate { position: relative; pointer-events: none; }
-.watermarkDate .watermark { pointer-events: none; border: none; font-size: 35px; font-family: "楷体"; box-shadow: 1px 1px 12px #fff; color: #b2b2b2; text-shadow: 1px 1px 0 #fff; padding: 8px; position: fixed; left: 50%; bottom: 80px; width: 85%; margin-left: -45%; text-align: center; z-index: 99; filter: alpha(opacity = 30); -moz-opacity: 0.2; opacity: 0.2; }
+.watermarkDate .watermark { pointer-events: none; border: none; font-size: 30px; font-family: "楷体"; box-shadow: 1px 1px 12px #fff; color: #b2b2b2; text-shadow: 1px 1px 0 #fff; padding: 8px; position: fixed; left: 50%; bottom: 80px; width: 85%; margin-left: -45%; text-align: center; z-index: 99; filter: alpha(opacity = 30); -moz-opacity: 0.2; opacity: 0.2; }
 .watermarkDate .watermark span {  transform: rotate(30deg); -ms-transform: rotate(30deg); -moz-transform: rotate(30deg); -webkit-transform: rotate(30deg); -o-transform: rotate(30deg); line-height: 3; display: block; }
