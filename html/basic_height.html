@@ -295,10 +295,11 @@ function noDate(){
             mouseWheel: true,
             wheelAction: 'zoom'
         });
+        document.getElementById("sollTable").addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     }
 
 
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
 
     function dateUse(){
 
